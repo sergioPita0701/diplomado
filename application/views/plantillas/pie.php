@@ -690,7 +690,7 @@
             nombreMod = datos[0]['nombreM'];
             console.log('nombrem=' + nombreMod);
             console.log('numerom=' + numeroMod);
-            $("#modulotoca").html('<p class="alert alert-success"><small>Al diplomante le toca cursar el :' + datos[0]['nombreM'] + '</small></p>');
+            $("#modulotoca").html('<p class="alert alert-success"><small>Al diplomante le toca cursar el : (' + convertirANumerosRomanosJS(datos[0]['numeroM']) + ' - ' + datos[0]['nombreM'] + ') ' + datos[0]['asignaturaNombreM'] + '</small></p>');
             $("#modulocorresponde").val(datos[0]['nombreM']);
             $("#modulosele").val(datos[0]['numeroM']);
             $.ajax({
@@ -711,6 +711,78 @@
         }
       }
     });
+  }
+
+  function convertirANumerosRomanosJS(cadenaNumero) {
+
+    var numero = parseInt(cadenaNumero);
+    if (typeof numero !== 'number' || numero < 1 || numero > 3999) {
+      return "Número inválido";
+    }
+
+    var romanNumeral = "";
+    var valoresRomanos = [{
+        valor: 1000,
+        numeral: "M"
+      },
+      {
+        valor: 900,
+        numeral: "CM"
+      },
+      {
+        valor: 500,
+        numeral: "D"
+      },
+      {
+        valor: 400,
+        numeral: "CD"
+      },
+      {
+        valor: 100,
+        numeral: "C"
+      },
+      {
+        valor: 90,
+        numeral: "XC"
+      },
+      {
+        valor: 50,
+        numeral: "L"
+      },
+      {
+        valor: 40,
+        numeral: "XL"
+      },
+      {
+        valor: 10,
+        numeral: "X"
+      },
+      {
+        valor: 9,
+        numeral: "IX"
+      },
+      {
+        valor: 5,
+        numeral: "V"
+      },
+      {
+        valor: 4,
+        numeral: "IV"
+      },
+      {
+        valor: 1,
+        numeral: "I"
+      }
+    ];
+
+    for (var i = 0; i < valoresRomanos.length; i++) {
+      while (numero >= valoresRomanos[i].valor) {
+        romanNumeral += valoresRomanos[i].numeral;
+        numero -= valoresRomanos[i].valor;
+      }
+    }
+
+    return romanNumeral;
   }
   //  Asignar mono
   function AsignarMonografia() {
@@ -3969,7 +4041,7 @@
         success: function(response) {
           // Maneja la respuesta del controlador aquí
           console.log(response);
-         
+
           $("#txtNumMEditar").val(response.numeroM); // Corregir aquí
           $('#selectNivelMEditar').val(response.nivelM);
           $('#txtNombreModuloEditar').val(response.nombreM);

@@ -99,13 +99,15 @@
                         <div class="col-md-6">
                             <form class="form-horizontal" id="formasigdoc" method="post"> <!--action="http://localhost:8080/diplomado/index.php/docencia/crearDocencia_paralelo"-->
                                 <div class="row">
-                                    <div class="col-md-5">
+                                    <div class="col-md-12">
                                         <input type="hidden" name="ciAcadDoc" id="ciAcadDoc" class="form-control input-sm" value="<?= $academico[0]['ciA']; ?>" readonly>
                                         <label for=""><small>Modulo </small></label>
                                         <select type="text" class="form-control input-sm " id="modulosele" name="modulosele">
                                             <option value="">--Seleccione un Modulo--</option>
                                             <?php foreach ($modulo as $modulito) : ?>
-                                                <option value="<?= $modulito['numeroM']; ?>"><?= $modulito['nombreM']; ?></option>
+                                                <option value="<?= $modulito['numeroM']; ?>">
+                                                    <?= " ( " .  convertirANumerosRomanos($modulito['nivelM']) . " - " . $modulito['nombreM'] . " ) " ?><br><?= $modulito['asignaturaNombreM']; ?>
+                                                </option>
                                             <?php endforeach; ?>
                                         </select>
                                     </div>

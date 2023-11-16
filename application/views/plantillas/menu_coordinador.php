@@ -13,11 +13,17 @@
           <ul class="nav nav-sidebar collapse" id="collapse1">
             <li><a>Modulo-Asignaturas de la Versión</a>
               <?php foreach ($modulo as $fila) : ?>
-                <ul class=""><?= $fila['nombreM']; ?>
+                <ul class="">
+                  ( <?= convertirANumerosRomanos($fila['nivelM']) . " - "  . $fila['nombreM'] . " ) " ?><br><?= $fila['asignaturaNombreM']; ?>
+
                   <?php $mod = $fila['idModulo']; ?>
                   <?php foreach ($paralelo as $fila) : ?>
                     <small>
-                      <ul class=""><a href="<?= base_url('index.php/calificacion/calificacion_paralelo/?modulo=' . $fila['numeroM'] . '&paralelo=' . $fila['nombre_paralelo']); ?>"><?= $mod == $fila['idModulo'] ? $fila['nombre_paralelo'] : ''; ?></a></ul>
+                      <ul class="">
+                        <a href="<?= base_url('index.php/calificacion/calificacion_paralelo/?modulo=' . $fila['numeroM'] . '&paralelo=' . $fila['nombre_paralelo']); ?>">
+                          <?= $mod == $fila['idModulo'] ? $fila['nombre_paralelo'] : ''; ?>
+                        </a>
+                      </ul>
                     </small>
 
                   <?php endforeach; ?>

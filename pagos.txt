@@ -1,0 +1,21 @@
+CT 3400 5 meses 
+MAT 340 
+Costo modulo 
+*Cuata x modulo  765 +340
+1105
+
+
+descuento
+15 % de 3060 es: 459    3060 -459 = 2601
+
+Total15% = descuento 15% + matricula   2601 +340 =2941 
+2941 - 1105 = 1836
+
+1836/3
+3 cutos de  612
+
+
+15 %  650 3055.75
+
+
+20%  612 2941

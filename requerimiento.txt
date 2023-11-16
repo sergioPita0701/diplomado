@@ -1,0 +1,14 @@
+Amigo lo que necesito es:
+* que se puedan registrar alumnos  y docentes
+*que se puedan crear versiones de diplomados o maestrias(nosotros elegimos y colocamos nombre)
+*que dentro de las versiones podramos crear modulos
+*dentro de los modulos asignaciones
+*ahora hay que crear un modulo de pagos:
+	-descuentos del 10% si pagas al contado
+	-descuento de 20% si saliste por excelencia
+	- descuento de 20% si eres administrativo
+	- descuento de 15% si perteneces algun colegio ya sea la sib o colegio de trabajadoras sociales algo asi
+	- 1105 bs primera cuota en toda para los que pagaran por cuotas
+* si se pudiera seria variable el costo dels diplomado y de las maestrias y que de acuerdo a eso se hagan los descuentos
+*ahora hay muchas personas que abandonan o se aplazan por diversos factores y se pueden reincorporar en otra version haciendo un tramite de convalidacion y se ajusto el pago
+*tambien hay casos en los que terminan todo pero no defienden en su tiempo a ellos se los coloca una multa 

@@ -1,0 +1,6 @@
+$this->session->set_userdata($version_dat);//agregar el idVersion a seccion
+
+( <?= convertirANumerosRomanos($fila['nivelM']) . " ) " . $fila['nombreM'];; ?><br><?= $fila['asignaturaNombreM']; ?>
+
+
+var_dump($this->form_validation->run());

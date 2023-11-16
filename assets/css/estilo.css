@@ -1,0 +1,245 @@
+ /*
+ * scroll vertical del tabla modal academicos no funciona
+ */
+ /* thead, tbody{ display: block;}
+ tbody{
+    height: 500px;
+    overflow-y: auto;
+    overflow-x: hidden;
+} */
+/* #div1{
+    overflow: scroll;
+    height: 200px;
+    width: 500px;
+}
+#div1 table{
+    width: 500px;
+    background-color: lightgreen;
+} */
+#espacio {
+    margin-bottom: 20px;
+}
+
+.footer {
+    margin-top: 20px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.pa {
+    margin-top: 10px;
+    padding: 5px;
+    background-color: #cd5c5c;
+}
+
+.imag {
+    margin-top: 5px;
+}
+
+.huma1 {
+    margin-top: 5px;
+    width: 20px;
+}
+.FacultadDeHumanidadesYCienciasDeLaEducacion {
+    margin-top: 5px;
+    width: 20px;
+} 
+.pan {
+    margin-top: 5px;
+}
+
+.menu-usu {
+    width: 1px;
+}
+
+
+/*
+ * Base structure
+ */
+
+
+/* Move down content because we have a fixed navbar that is 50px tall */
+
+body {
+    padding-top: 50px;
+}
+
+
+/*
+ * Global add-ons
+ */
+
+.sub-header {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+
+/*
+ * Top navigation
+ * Hide default border to remove 1px line.
+ */
+
+.navbar-fixed-top {
+    border: 0;
+}
+
+
+/*
+ * Sidebar
+ */
+
+ /* menu version cerrada probando */
+/* .contenedor-menu .menu ul {
+    display: none;
+} */
+/* .contenedor-menu .menu li a {
+    color: #494949;
+} */
+/* .menu .active>a {
+    background: #1a95d5;
+    color: #fff;
+} */
+
+/* Hide for mobile, show later */
+
+.sidebar {
+    display: none;
+}
+/* .sidebar ul {
+    display: none;
+} */
+@media (min-width: 768px) {
+    .sidebar {
+        position: fixed;
+        top: 51px;
+        bottom: 0;
+        left: 0;
+        z-index: 1000;
+        display: block;
+        padding: 20px;
+        overflow-x: hidden;
+        overflow-y: auto;
+        /* Scrollable contents if viewport is shorter than content. */
+        background-color: #f5f5f5;
+        border-right: 1px solid #eee;
+    }
+}
+
+
+/* Sidebar navigation */
+
+.nav-sidebar {
+    margin-right: -21px;
+    /* 20px padding + 1px border */
+    margin-bottom: 20px;
+    margin-left: -20px;
+}
+
+.nav-sidebar>li>a {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.nav-sidebar>.active>a,
+.nav-sidebar>.active>a:hover,
+.nav-sidebar>.active>a:focus {
+    color: rgb(255, 255, 255);
+    background-color: #428bca;
+}
+
+.nav-sidebar>li>ul>small>ul>a {
+    color: rgba(8, 8, 0, 0.979);
+    background-color: rgba(245, 245, 241, 0.966);
+}
+.nav-sidebar>li>ul{
+    font-size: small;
+    color: rgb(94, 145, 248);
+    background-color: rgba(92, 101, 95, 0.292);
+}
+.nav-sidebar>li>ul>li>ul>a{
+    font-size: x-small;
+    color: rgb(255, 255, 255);
+    background-color: rgba(92, 101, 95, 0.292);
+}
+.nav-sidebar>li>a{
+    color: rgb(208, 208, 208);
+    background-color: rgba(92, 101, 95, 0.292);
+}
+.nav-sidebar>li>ul>li>a{
+    color: rgb(120, 155, 179);
+    background-color: rgba(92, 101, 95, 0.292);
+}
+/*
+ * Main content
+ */
+
+.main {
+    padding: 20px;
+}
+
+@media (min-width: 768px) {
+    .main {
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+}
+
+.main .page-header {
+    margin-top: 0;
+}
+
+
+/*
+ * Placeholder dashboard ideas
+ */
+
+.placeholders {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.placeholders h4 {
+    margin-bottom: 0;
+}
+
+.placeholder {
+    margin-bottom: 20px;
+}
+
+.placeholder img {
+    display: inline-block;
+    border-radius: 50%;
+}
+
+
+/*
+ * Imagen para Detalle Inform Diplomante
+ */
+ .imagenInfDiplo{
+     display: block;
+     width: 5%;
+     height: 5%;
+ }
+ .imagenInfDiplo img{
+     height: 80%;
+     width: 80%;
+ }
+ .negro {
+    background-color: #4CAF50;
+    color: red;
+ }
+ .table-title {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 16px;
+    text-align: left;
+}
+
+.table-title h2 {
+    margin: 0;
+}
+
+.table-title .btn {
+    margin-top: 10px;
+}

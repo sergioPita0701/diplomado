@@ -24,7 +24,7 @@
                                             </div>
                                         </div>
                                         <div class="col-md-10 col-md-offset-1 ">
-                                            <p class="text-muted"><em>Diplomante : </em></p>
+                                            <p class="text-muted"><em>Alumno : </em></p>
                                         </div>
                                         <div class="form-group ">
                                             <div class="col-md-4 col-md-offset-2 ">

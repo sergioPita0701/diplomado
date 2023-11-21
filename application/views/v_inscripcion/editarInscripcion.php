@@ -1,7 +1,7 @@
 <div class="row">
     <div class="col-md-9 col-md-offset-1">
         <legend>
-            <h1>Editar Registro de Diplomante</h1>
+            <h1>Editar Registro de Alumno</h1>
         </legend>
     </div>
 

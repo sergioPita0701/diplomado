@@ -43,7 +43,7 @@ class Modulodiplomante extends CI_Controller {
                     'paralelo'=>$this->paralelo_model->getParalelo($version),
                     'diplomanteinscrito'=>$this->inscripcion_model->buscar_inscripcion($version,$ciDiplomante,$numInscripcion),
                     'inscripcion'=>$this->inscripcion_model->getregistroInsripciones($version)
-                    // 'nombreM'=>'Diplomantes con Modulo Asignado',
+                    // 'nombreM'=>'Alumnos con Modulo Asignado',
                     
                 );
                 $this->load->view('plantillas/encabezado');
@@ -250,7 +250,7 @@ class Modulodiplomante extends CI_Controller {
                         'modulo'=>$this->modulo_model->getModulo($version),
                         'paralelo'=>$this->paralelo_model->getParalelo($version),
                         'modulodiplomante'=>$this->modulodiplomante_model->getModuloDiplomante($version),
-                        'nombreM'=>'Diplomantes con Modulo Asignado'
+                        'nombreM'=>'Alumnos con Modulo Asignado'
                     );
                     $this->load->view('plantillas/navegador_version',$data);
 

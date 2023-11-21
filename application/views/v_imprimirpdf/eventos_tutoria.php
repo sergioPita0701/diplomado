@@ -77,19 +77,19 @@ $elget=strftime("%A, %d de %B del %Y");
 $pdf->WriteHTMLCell(0,0,130,'',$elget,0,1,0,true,'C',true);//averiguar esos parametros
 $titulo= <<<OED
     <h3>Reporte de Asignación de Tutoría</h3>
-    Se Asignó un Tutor para la realización de Monografía de un Diplomante, los detalles del mismo son los siguientes:
+    Se Asignó un Tutor para la realización de Monografía de un Alumno, los detalles del mismo son los siguientes:
 OED;
 $pdf->WriteHTMLCell(0,0,'','',$titulo,0,1,0,true,'C',true);
 
 $cancelacionTuto=($eventoTutoria[0]['cancelacionT']==0)? 'Nó Canceló la Tutoría':'Canceló Tutoría';
 $tabla='<table border="1" cellspacing="3" cellpadding="4">
         <tr>
-            <th align="center"><strong>CI Diplomante</strong></th>
+            <th align="center"><strong>CI Alumno</strong></th>
             <th align="center">'.$eventoTutoria[0]['ciD'].'</th>
 
         </tr> 
         <tr>
-            <th align="center"><strong>Nombre de Diplomante</strong></th>
+            <th align="center"><strong>Nombre de Alumno</strong></th>
             <th align="center">'.$eventoTutoria[0]['nombreD'].' '.$eventoTutoria[0]['apellidoMaternoD'].' '.$eventoTutoria[0]['apellidoPaternoD'].'</th>
 
         </tr> 

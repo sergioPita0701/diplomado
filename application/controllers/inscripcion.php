@@ -213,13 +213,13 @@ class Inscripcion extends CI_Controller
                     $data['msg'] = "Se registro nueva Inscripcion.";
                     $this->load->view('plantillas/msg_success', $data);
                 } else if ($indice == 2) {
-                    $data['msg'] = "No es posible registrar Inscripcion.El diplomante ya esta Registrado";
+                    $data['msg'] = "No es posible registrar Inscripcion.El Alumno ya esta Registrado";
                     $this->load->view('plantillas/msg_error', $data);
                 } else if ($indice == 3) {
                     $data['msg'] = "Se Elimino registro de Inscripcion.";
                     $this->load->view('plantillas/msg_success', $data);
                 } else if ($indice == 4) {
-                    $data['msg'] = "No es posible Eliminar Inscripcion, es posible que el Diplomante ya tenga asignada una calificacion!.";
+                    $data['msg'] = "No es posible Eliminar Inscripcion, es posible que el Alumno ya tenga asignada una calificacion!.";
                     $this->load->view('plantillas/msg_error', $data);
                 }
                 // $this->load->view('v_inscripcion/inscripcion',$data);

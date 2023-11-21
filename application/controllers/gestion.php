@@ -14,6 +14,7 @@ class Gestion extends CI_Controller
         $this->load->model('paralelo_model');
         $this->load->model('diplomante_model');
         $this->load->model('profesion_model');
+
     }
 
     public function index() //nose  donde levanto?

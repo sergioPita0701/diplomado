@@ -25,10 +25,10 @@
                                                 </center>
                                                 <input type="hidden" name="realizamono" id="realizamono" class="form-control input-sm" size="10" value="" readonly>
                                                 <!-- <label class=" control-label">CI : </label> -->
-                                                <input type="text" name="ciDiplo" id="ciDiplo" placeholder="CI Diplomante (Seleccione Participante)" class="form-control input-sm" size="10" value="" readonly><br>
+                                                <input type="text" name="ciDiplo" id="ciDiplo" placeholder="CI Alumno (Seleccione Participante)" class="form-control input-sm" size="10" value="" readonly><br>
                                                 <!-- <small> <p name="ciParticipante" id="ciParticipante"></p></small> -->
                                                 <!-- <label class=" control-label">Nombre: </label> -->
-                                                <input type="text" name="nombreParticipante" id="nombreParticipante" placeholder="Nombre Diplomante.." class="form-control input-sm" size="10" value="" readonly>
+                                                <input type="text" name="nombreParticipante" id="nombreParticipante" placeholder="Nombre Alumno.." class="form-control input-sm" size="10" value="" readonly>
                                                 <!-- <small> <p id="nombreParticipante"></p></small> -->
                                                 <label class=" control-label"><small>Titulo de Monografia: </small></label>
                                                 <p id="titulomono"></p>

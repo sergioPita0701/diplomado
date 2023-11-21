@@ -224,12 +224,12 @@ class Diplomante extends CI_Controller {
                 if($indice==1)
                 {
                 
-                    $data['msg']="Se registro Inscripcion de siguiente Diplomante a la Version Actual.";
+                    $data['msg']="Se registro Inscripcion de siguiente Alumnos a la Version Actual.";
                     $this->load->view('plantillas/msg_success',$data);
                 
                 }else if($indice==2)
                 {
-                    $data['msg']="No es posible registrar Inscripcion.El diplomante ya esta Registrado";
+                    $data['msg']="No es posible registrar Inscripcion.El Alumnos ya esta Registrado";
                     $this->load->view('plantillas/msg_error',$data);
                 }else if($indice==3)
                 {

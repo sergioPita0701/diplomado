@@ -36,7 +36,7 @@
                             <thead style="display: block;  "><!-- -->
                                 <th style="width:50px;word-break:break-word " class="active"><small>#</small></th>
                                 <th style="width:100px;word-break:break-word " class="active"><small>Tabla</small></th>
-                                <th style="width:150px;word-break:break-word " class="active"><small>Diplomante</small></th>
+                                <th style="width:150px;word-break:break-word " class="active"><small>Alumno</small></th>
                                 <th style="width:80px;word-break:break-word " class="active"><small>CI</small></th>
                                 <th style="width:50px;word-break:break-word " class="active"><small>Insc.</small></th>
                                 <th style="width:100px;word-break:break-word " class="active"><small>Modulo</small></th>

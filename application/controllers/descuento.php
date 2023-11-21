@@ -37,11 +37,12 @@ class Descuento extends CI_Controller
         $this->load->view('plantillas/navegador');
         $data['tipo'] = $this->session->userdata('tipo');
         switch ($data['tipo']) {
-            case 'Secretario':
-                $this->load->view('plantillas/menu_secretario', $data);
-                break;
+
             case 'Coordinador':
                 $this->load->view('plantillas/menu_coordinador', $data);
+                break;
+            case 'Administrador':
+                $this->load->view('plantillas/menu_administrador', $data);
                 break;
             default:
                 echo '<script> alert("la version fue cerrada!")</script>';

@@ -4,7 +4,7 @@
             <div class="row">
                 <div class="row">
                     <div class="col-md-12 text text-primary" >
-                        <h4 ><center>Informacion de Diplomante - <?= $nombre?></center></h4>
+                        <h4 ><center>Información de Alumno - <?= $nombre?></center></h4>
                     </div>
                 </div><hr>
                 <div class="row">
@@ -18,7 +18,7 @@
                         <small><label for="">Nombre Completo:</label></small><h4><span class="label label-danger"> <?= empty($diplomanteinscrito[0]->nombreD) ? "" : $diplomanteinscrito[0]->nombreD."  ".$diplomanteinscrito[0]->apellidoPaternoD."  ".$diplomanteinscrito[0]->apellidoMaternoD;?></span></h4>
                     </div>
                     <div class=" col-md-3 col-md-offset-">
-                        <small><label for="">Fecha de Inscripcion:</label></small> <span class="label label-default"><?= empty($diplomanteinscrito[0]->fechaInscripcionI) ? "" : $diplomanteinscrito[0]->fechaInscripcionI ;?></span>
+                        <small><label for="">Fecha de Inscripción:</label></small> <span class="label label-default"><?= empty($diplomanteinscrito[0]->fechaInscripcionI) ? "" : $diplomanteinscrito[0]->fechaInscripcionI ;?></span>
                     </div>
                 </div>
                 <!-- <hr> -->

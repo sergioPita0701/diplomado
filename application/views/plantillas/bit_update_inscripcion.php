@@ -2,7 +2,7 @@
     <div class="panel panel-default">
         <div class="panel-body">
             <div class="page-header">
-                <h3> Bitacora de Acciones - <small>Actualizaciones de Diplomantes Inscritos</small></h3>
+                <h3> Bitacora de Acciones - <small>Actualizaciones de Alumnos Inscritos</small></h3>
 
             </div>
             <div class="row">
@@ -42,7 +42,7 @@
                                         <center>CI</center>
                                     </small></th>
                                 <th style="width:130px;word-break:break-word " class="active"><small>
-                                        <center>Diplomante</center>
+                                        <center>Alumno</center>
                                     </small></th>
                                 <th style="width:100px;word-break:break-word " class="active"><small>
                                         <center>Num. Insc.</center>

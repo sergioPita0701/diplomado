@@ -23,6 +23,7 @@
                         <a href="<?= base_url('index.php/calificacion/calificacion_paralelo/?modulo=' . $fila['numeroM'] . '&paralelo=' . $fila['nombre_paralelo']); ?>">
                           <?= $mod == $fila['idModulo'] ? $fila['nombre_paralelo'] : ''; ?>
                         </a>
+                          
                       </ul>
                     </small>
 
@@ -64,8 +65,8 @@
         </li>
         <li class="titulo"><a data-toggle="collapse" data-parent="#accordion" href="#collapse5"><img src="<?php echo base_url(); ?>assets/img/Test.png" alt="as.png" style="width: 25px;height:25px;"> Registros <span class="sr-only">(current)</span></a>
           <ul class="nav nav-sidebar collapse" id="collapse5">
-            <!-- <li><a href="<?= base_url(); ?>index.php/diplomante">Diplomantes</a></li> -->
-            <li><a href="<?= base_url(); ?>index.php/inscripcion/registroInscripciones">Diplomantes</a></li>
+            <!-- <li><a href="<?= base_url(); ?>index.php/diplomante">Alumnos</a></li> -->
+            <li><a href="<?= base_url(); ?>index.php/inscripcion/registroInscripciones">Alumnos</a></li>
             <li><a href="">Modulo-Asignaturas</a>
               <ul><a href="<?= base_url(); ?>index.php/modulo/">Modulo-Asignaturas</a></ul>
               <ul><a href="<?= base_url(); ?>index.php/paralelo/">Paralelos</a></ul>

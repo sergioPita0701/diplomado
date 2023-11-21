@@ -5,7 +5,7 @@
                 <div class="row">
                     <div class="col-md-12 text text-primary">
                         <h4>
-                            <center>Informacion de Diplomante - <?= $nombre ?></center>
+                            <center>Información de Alumno - <?= $nombre ?></center>
 
                         </h4>
                     </div>

@@ -43,7 +43,12 @@
             </li>
           </ul>
         </li>
-
+        <li class="titulo"><a data-toggle="collapse" data-parent="#accordion" href="#collapse6"><img src="<?php echo base_url(); ?>assets/img/pagoMulta.png" alt="as.png" style="width: 25px;height:25px;"> Pagos <span class="sr-only">(current)</span></a>
+          <ul class="nav nav-sidebar collapse" id="collapse6">
+            <li><a href="<?= base_url(); ?>index.php/descuento">Descuentos</a></li>
+            <li><a href="<?= base_url(); ?>index.php/multa">Multas</a></li>
+          </ul>
+        </li>
       </ul>
     </div>
 

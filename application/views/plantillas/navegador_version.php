@@ -16,7 +16,7 @@
               <ul class="visible-xs"><a href="<?= base_url();?>index.php/"><?=$fila['nombreM']; ?></a></ul>
             <?php endforeach;?>
 
-            <li class="visible-xs"><a href="">Diplomantes</a></li>
+            <li class="visible-xs"><a href="">Alumnos</a></li>
             
             <li><a href="">Version</a></li>
             <li><a href="<?= base_url();?>index.php/version/cerrar_sesion">Cerrar Version</a></li>

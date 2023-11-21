@@ -78,8 +78,8 @@ $tabla='<table border="1" cellspacing="3" cellpadding="4">
             <th align="center"><strong>No.</strong></th>
             <th align="center"><strong>Fecha Def.</strong></th>
             <th align="center"><strong>Tipo Def.</strong></th>
-            <th align="center"><strong>CI Diplomante</strong></th>
-            <th align="center"><strong>Diplomante</strong></th>
+            <th align="center"><strong>CI Alumno</strong></th>
+            <th align="center"><strong>Alumno</strong></th>
             <th align="center"><strong>Trib. Presidente</strong></th>
             <th align="center"><strong>Trib. Secretario</strong></th>
         </tr>';

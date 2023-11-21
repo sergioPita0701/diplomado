@@ -11,7 +11,7 @@
                         <input class="btn btn-primary btn-sm active" type="submit" id="" value="Buscar">
                     </div>
                     <div class="col-md-3" >
-                        <small><p id="alert" class="alert alert-success"><?= "<strong>Total Inscritos:</strong>". $numinscritos."  Diplomantes";?></p></small> 
+                        <small><p id="alert" class="alert alert-success"><?= "<strong>Total Inscritos:</strong>". $numinscritos."  Alumnos";?></p></small> 
                     </div>
                 </div>
             </form>

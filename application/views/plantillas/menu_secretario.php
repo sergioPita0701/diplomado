@@ -20,10 +20,10 @@
               <li><a href="<?= base_url(); ?>index.php/inscripcion/inscripciones">Nueva Inscripcion</a></li>
             <?php  } else {
             ?>
-              <li><a href="<?= base_url(); ?>index.php/inscripcion/inscripciones">Nueva Inscripcion borrar</a></li>
+              <li><a href="<?= base_url(); ?>index.php/inscripcion/inscripciones">Nueva Inscripcion</a></li>
 
-              <li><a class="text text-danger"><small> Inscripciones Cerradas</small></a></li>
-              <li><a class="text text-danger"><small> Fecha Cierre <?php $this->session->userdata('fechainscripciones') ?></small></a></li>
+              <!-- <li><a class="text text-danger"><small> Inscripciones Cerradas</small></a></li> -->
+              <!-- <li><a class="text text-danger"><small> Fecha Cierre <?php $this->session->userdata('fechainscripciones') ?></small></a></li> -->
             <?php  }
 
             ?>
@@ -34,7 +34,7 @@
         </li>
         <li class=""><a data-toggle="collapse" data-parent="#accordion" href="#collModulos"><img src="<?php echo base_url(); ?>assets/img/modulos2.png" alt="as.png" style="width: 25px;height:25px;">Modulo-Asignaturas <span class="sr-only">(current)</span></a>
           <ul class="nav nav-sidebar collapse" id="collModulos">
-            <li><a href="<?= base_url(); ?>index.php/modulodiplomante/incripcion_diplomate_modulo">Asignar Modulo a Diplomantes</a></li>
+            <li><a href="<?= base_url(); ?>index.php/modulodiplomante/incripcion_diplomate_modulo">Asignar Modulo a Alumnos</a></li>
             <li><a href="">Participantes Programados</a>
               <?php foreach ($modulo as $fila) : ?>
 

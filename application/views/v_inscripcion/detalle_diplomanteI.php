@@ -8,7 +8,7 @@
                         <form class="form-horizontal" action="" method="">
                             <div class="header text text-success">
                                 <h4>
-                                    <center>INFORMACION DE DIPLOMANTE</center>
+                                    <center>INFORMACIÓN DE ALUMNO</center>
                                 </h4>
                             </div>
                             <hr>
@@ -193,7 +193,7 @@
                         <div class="row">
                             <div class="col-md-5 col-md-offset-2">
                                 <!-- <button href="" type="button" class="btn btn-default  btn-sm" onClick="">Imprimir</button> -->
-                                <button href="" type="button" class="btn btn-danger btn-sm active" data-toggle="modal" data-target="#eliminarInscripcion">Eliminar Diplomante de la Version</button>
+                                <button href="" type="button" class="btn btn-danger btn-sm active" data-toggle="modal" data-target="#eliminarInscripcion">Eliminar Alumno de la Version</button>
 
                             </div>
                         </div>
@@ -214,7 +214,7 @@
                 <form class="form" role="form" action="http://localhost:8080/diplomado/index.php/inscripcion/eliminarInscripcion" method="post">
                     <div id=" row mensajeEliminar">
                         <small>
-                            <p class="alert alert-warning"><span class="glyphicon glyphicon-alert"></span><?= " Dese Eliminar Inscripcion numero: " . $diplomanteinscrito[0]->numeroI . " del Diplomante con CI: " . $diplomante[0]['ciD']; ?>
+                            <p class="alert alert-warning"><span class="glyphicon glyphicon-alert"></span><?= " Dese Eliminar Inscripcion numero: " . $diplomanteinscrito[0]->numeroI . " del Alumno con CI: " . $diplomante[0]['ciD']; ?>
                             <p>
                         </small>
                         <input type="hidden" name="ciDiplomante" value="<?= $diplomante[0]['ciD']; ?>">
@@ -238,7 +238,7 @@
             <form class="form" id="formEditar">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h5 class="modal-title text text-primary" id="">Editar Datos Personales del Diplomante</h5>
+                    <h5 class="modal-title text text-primary" id="">Editar Datos Personales del Alumno</h5>
                 </div>
                 <div class="modal-body">
                     <div class="row">
@@ -297,7 +297,7 @@
             </form>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">Cerrar</button>
-                <button type="button" class="btn btn-primary btn-sm" id="btneditarDiplomante" onclick="editardiplomante();" disabled>Actualizar Datos Personales de Diplomante</button>
+                <button type="button" class="btn btn-primary btn-sm" id="btneditarDiplomante" onclick="editardiplomante();" disabled>Actualizar Datos Personales de Alumno</button>
                 <!-- <input type="submit" class="btn btn-primary" value="Actualizar Informacion " > -->
             </div>
 
@@ -313,7 +313,7 @@
             <!-- <form class="form" role="form" action="http://localhost:8080/diplomado/index.php/diplomante/editarDiplomante" method="post"> -->
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h5 class="modal-title text text-primary" id="">Editar Datos de Inscripcion del Diplomante</h5>
+                <h5 class="modal-title text text-primary" id="">Editar Datos de Inscripcion del Alumno</h5>
             </div>
             <div class="modal-body">
                 <div class="row">

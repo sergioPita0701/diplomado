@@ -456,7 +456,7 @@
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                 <h4 class="modal-title" id="myModalLabel">
-                    <center>Registrar Nuevo Diplomante</center>
+                    <center>Registrar Nuevo Alumno</center>
                 </h4>
             </div>
             <div class="modal-body">
@@ -467,7 +467,7 @@
                             <div class="col-md-11 col-md-offset-3 form-inline">
                                 <div class="form-group">
                                     <input type="text" name="txtci" class="form-control input-sm" id="ci" placeholder="Introdusca numero de CI" value="">
-                                    <button type="button" class="btn btn-primary btn-sm" value="" id="buscarCi" onclick="buscarci()">Buscar Diplomante</button>
+                                    <button type="button" class="btn btn-primary btn-sm" value="" id="buscarCi" onclick="buscarci()">Buscar Alumno</button>
                                 </div>
 
                             </div>

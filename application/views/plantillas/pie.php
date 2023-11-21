@@ -132,7 +132,7 @@
           if (data.length == 0) //dats.leng y mas buscar...
           {
             //VENTANA DE DIPLOMANTE-MODAL
-            $("#mensaje").html('<p class="alert alert-warning">Diplomante nuevo, Ingrese datos del Diplomante y verifique detalladamente.</p>');
+            $("#mensaje").html('<p class="alert alert-warning">Alumno nuevo, Ingrese datos del Alumno y verifique detalladamente.</p>');
 
             $("#nombred").val('');
             $("#apepaternod").val('');
@@ -198,7 +198,7 @@
       })
     } else {
       diplomante();
-      $("#mensaje").html('<p class="alert alert-danger">Espere!!, Ingrese CI del Diplomante.</p>');
+      $("#mensaje").html('<p class="alert alert-danger">Espere!!, Ingrese CI del Alumno.</p>');
 
     }
 
@@ -526,7 +526,7 @@
     diplo = $("#ciDiplomante").text();
 
     if (insc == '' && diplo == '') {
-      $("#msjError").html('<p class="alert alert-warning"><span class="glyphicon glyphicon-alert" ></span><small> Debe seleccionar un Diplomante de la lista de " Participantes sin Modulo " </small><span class="glyphicon glyphicon-hand-right" ></span></p>');
+      $("#msjError").html('<p class="alert alert-warning"><span class="glyphicon glyphicon-alert" ></span><small> Debe seleccionar un Alumno de la lista de " Participantes sin Modulo " </small><span class="glyphicon glyphicon-hand-right" ></span></p>');
     } else {
       $("#mensaje").hide();
 
@@ -572,11 +572,11 @@
               // data=JSON.parse(data);
               // console.log(data);
               if (data == 'noinsert') {
-                $("#mensaje").html('<p class="alert alert-danger"><span class="glyphicon glyphicon-floppy-remove" ></span><small> El diplomante ya se registro al Modulo en la Version Actual, puede que solo le falte asignarsele una Calificacion de Aprobacion, revise sus listas. </small><span class="glyphicon glyphicon-thumbs-down" ></span></p>').fadeIn();
+                $("#mensaje").html('<p class="alert alert-danger"><span class="glyphicon glyphicon-floppy-remove" ></span><small> El Alumno ya se registro al Modulo en la Version Actual, puede que solo le falte asignarsele una Calificacion de Aprobacion, revise sus listas. </small><span class="glyphicon glyphicon-thumbs-down" ></span></p>').fadeIn();
 
               } else {
 
-                $("#mensaje").html('<p class="alert alert-info"><span class="glyphicon glyphicon-ok" ></span><small> Diplomante Registrado al Modulo Exitosamente!!! </small><span class="glyphicon glyphicon-thumbs-up" ></span></p>').fadeIn();
+                $("#mensaje").html('<p class="alert alert-info"><span class="glyphicon glyphicon-ok" ></span><small> Alumno Registrado al Modulo Exitosamente!!! </small><span class="glyphicon glyphicon-thumbs-up" ></span></p>').fadeIn();
                 $("#mensaje").show();
               }
 
@@ -1380,7 +1380,7 @@
             // console.log(data);
             // alert(data);
             if (data == 'notuto') { //==
-              $("#msjtutoria").html('<p class="alert alert-danger"><span class="glyphicon glyphicon-floppy-remove" ></span><small> No se puede Registrar Tutoría!! Verifique si el Diplomante ya Tiene Tutor. </small><span class="glyphicon glyphicon-thumbs-down" ></span></p>').fadeIn();
+              $("#msjtutoria").html('<p class="alert alert-danger"><span class="glyphicon glyphicon-floppy-remove" ></span><small> No se puede Registrar Tutoría!! Verifique si el Alumno ya Tiene Tutor. </small><span class="glyphicon glyphicon-thumbs-down" ></span></p>').fadeIn();
             } else {
               // $("#msjtutoria").html('<p class="alert alert-info"><span class="glyphicon glyphicon-ok" ></span><small> Tutoría Registrada Exitosamente!!! </small><span class="glyphicon glyphicon-thumbs-up" ></span></p>').fadeIn();
               // $("#msjtutoria").show();                    
@@ -1670,7 +1670,7 @@
               $('#tipdef').hide();
               $('#fechdef').hide();
               $('#mnsjprogdefens').show();
-              $('#mnsjprogdefens').html('</br><center><p class="text text-danger"><strong>El Diplomante yá defendió y Aprobó !!! <span class="glyphicon glyphicon-thumbs-up"></span> </strong></p></center>');
+              $('#mnsjprogdefens').html('</br><center><p class="text text-danger"><strong>El Alumno yá defendió y Aprobó !!! <span class="glyphicon glyphicon-thumbs-up"></span> </strong></p></center>');
             }
           }
         } else {
@@ -2585,7 +2585,7 @@
     var ciD = $("#pciDiplo").text();
 
     if (ciD == '') {
-      $("#msjDiploamteMo").html('<p class="alert alert-warning"><span class="glyphicon glyphicon-alert" ></span><small> Debe seleccionar un Diplomante de la lista de Lateral " </small><span class="glyphicon glyphicon-hand-right" ></span></p>');
+      $("#msjDiploamteMo").html('<p class="alert alert-warning"><span class="glyphicon glyphicon-alert" ></span><small> Debe seleccionar un Alumno de la lista de Lateral " </small><span class="glyphicon glyphicon-hand-right" ></span></p>');
     } else {
       $("#msjMonografia").hide();
 
@@ -2630,7 +2630,7 @@
               // console.log(data);
               // alert(data);
               if (data == 'nomono') {
-                $("#msjMonografia").html('<p class="alert alert-danger"><span class="glyphicon glyphicon-floppy-remove" ></span><small> No se puede Registrar Monografia!! Verifique si el Diplomante ya Tiene Monografia Registrada. </small><span class="glyphicon glyphicon-thumbs-down" ></span></p>').fadeIn();
+                $("#msjMonografia").html('<p class="alert alert-danger"><span class="glyphicon glyphicon-floppy-remove" ></span><small> No se puede Registrar Monografia!! Verifique si el Alumno ya Tiene Monografia Registrada. </small><span class="glyphicon glyphicon-thumbs-down" ></span></p>').fadeIn();
 
               } else {
                 $("#msjMonografia").html('<p class="alert alert-info"><span class="glyphicon glyphicon-ok" ></span><small> Monografia Registrada Exitosamente!!! </small><span class="glyphicon glyphicon-thumbs-up" ></span></p>').fadeIn();
@@ -3647,7 +3647,7 @@
   });
   // ELIMINAR UN DOWNLOAD PDF MONOGRAFIA
   function eliminarmonopdf() {
-    if (confirm('Esta Seguro de Eliminar el Documento de Monografia del Diplomante?')) {
+    if (confirm('Esta Seguro de Eliminar el Documento de Monografia del Alumno?')) {
       var archivo = $('#pdfmonografia').val();
       $.ajax({
         type: 'post',

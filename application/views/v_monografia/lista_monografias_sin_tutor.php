@@ -62,7 +62,7 @@
                                                 <span class="glyphicon glyphicon-cog"></span>
                                             </b>
 
-                                            <a href="<?= base_url('index.php/monografia/eliminarMonografia/?mono=' . $fila['idMonografia']); ?>" class="btn btn-danger btn-group btn-xs" onclick="return confirm('Desea Realmente Eliminar la Monografia del Diplomante?');">
+                                            <a href="<?= base_url('index.php/monografia/eliminarMonografia/?mono=' . $fila['idMonografia']); ?>" class="btn btn-danger btn-group btn-xs" onclick="return confirm('Desea Realmente Eliminar la Monografia del Alumno?');">
                                                 <span class="glyphicon glyphicon-remove"></span> </a>
                                         </td>
                                     </tr>

@@ -69,7 +69,7 @@ class Pago extends CI_Controller
         $diplomante = $this->diplomante_model->getDiplomante($ciP);
         $inscripcion = $this->inscripcion_model->getIDInscripcion($idI);
         if (empty($diplomante) || empty($inscripcion)) {
-            echo '<script> alert("El Diplomante no esta registrado en esta version")</script>';
+            echo '<script> alert("El Alumno no esta registrado en esta version")</script>';
             redirect('version/ingresarv', 'refresh');
         }
 
@@ -238,7 +238,7 @@ class Pago extends CI_Controller
         $ciP = urldecode($id);
         $diplomanteinscrito = $this->inscripcion_model->getregistroInsripciones($version, $id);
         if (empty($diplomanteinscrito)) {
-            echo '<script> alert("El Diplomante no tiene pagos en esta version")</script>';
+            echo '<script> alert("El Alumno no tiene pagos en esta version")</script>';
             redirect('version/ingresarv', 'refresh');
         }
 

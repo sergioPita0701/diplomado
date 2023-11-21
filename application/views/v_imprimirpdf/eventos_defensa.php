@@ -73,7 +73,7 @@ $elget=$data.$fecha;
 $pdf->WriteHTMLCell(0,0,130,'',$elget,0,1,0,true,'C',true);//averiguar esos parametros
 $titulo= <<<OED
     <h3>Reporte de Defensa</h3>
-    Se realizó la Programación de Defensa y Designación de Tribunales del Diplomante, se detalla a continuación:
+    Se realizó la Programación de Defensa y Designación de Tribunales del Alumno, se detalla a continuación:
 OED;
 $pdf->WriteHTMLCell(0,0,'','',$titulo,0,1,0,true,'C',true);
 
@@ -82,7 +82,7 @@ $tribPresidente=($eventoDefensa[0]['tipo_tribunal']=='Presidente')? $eventoDefen
 $tribSecretario=($eventoDefensa[0]['tipo_tribunal']=='Secretario')? $eventoDefensa[0]['nombreA']:$eventoDefensa[1]['nombreA'];
 $tabla='<table border="1" cellspacing="3" cellpadding="4">
         <tr>
-            <th align="center"><strong>Nombre Diplomante</strong></th>
+            <th align="center"><strong>Nombre Alumno</strong></th>
             <th align="center">'.$eventoDefensa[0]['nombreD'].' '.$eventoDefensa[0]['apellidoPaternoD'].' '.$eventoDefensa[0]['apellidoMaternoD'].'</th>
         </tr>
         <tr>

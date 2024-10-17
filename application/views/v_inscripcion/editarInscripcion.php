@@ -8,7 +8,7 @@
 </div>
 <div class="row">
     <div class="col-md-9 col-md-offset-1">
-        <form action="http://localhost:8080/diplomado/index.php/inscripcion/editarInscripcion" method="POST" class="form" role="form">
+        <form action="http://localhost:80/diplomado/index.php/inscripcion/editarInscripcion" method="POST" class="form" role="form">
 
             <div class="row form-group">
                 <div class="col-md-3">

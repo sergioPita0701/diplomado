@@ -62,4 +62,52 @@ class Pago_model extends CI_Model
         $this->db->where('idPago', $idPago);
         $this->db->delete('pago');
     }
+    public function getAllPagosCSV()
+    {
+        // $this->db->select('
+        // p.fechaDepositoP,
+        // p.numeroDepositoP,
+        // p.montoP,
+        // p.monedaP,
+        // p.tasaCambioP,
+        // p.montoTotalBsP,
+
+        // t.montoOriginalT,
+        // t.montoDescuentoT,
+        // t.estadoT,
+
+        // i.numeroI,
+        // i.ciI,
+        // i.sexoI,
+        // i.paisnacI,
+        // i.departamentonacI,
+        // i.fechanacI,
+        // i.estadoCivilI,
+        // i.direccionI,
+        // i.telefonoI,
+        // i.celularI,
+        // i.emailI,
+ 
+        // d.ciD,
+        // d.nombreD,
+        // d.apellidoPaternoD,
+        // d.apellidoMaternoD,
+        // d.ciudadD,
+            $this->db->select('
+        p.*,
+        t.*,
+        i.*,
+        v.*,
+        d.*,
+        pro.*,'
+        );
+        $this->db->from('pago p');
+        $this->db->join('transaccion t', 'p.idTransaccion = t.idTransaccion', 'left');
+        $this->db->join('inscripcion i', 't.idInscripcion = i.idInscripcion', 'left');   
+        $this->db->join('version v', 'v.idVersion = i.idVersion', 'left');
+        $this->db->join('diplomante  d', 'i.idDiplomante = d.idDiplomante', 'left');
+        $this->db->join('profesion pro', 'd.idProfesion = pro.idProfesion', 'left');
+        $query = $this->db->get();
+        return $query->result_array();
+    }
 }

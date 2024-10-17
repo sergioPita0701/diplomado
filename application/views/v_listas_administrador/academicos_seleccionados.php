@@ -6,7 +6,7 @@
                 <hr>
                 <div class="row">
                     <div class="col-md-5 col-md-offset-6">
-                        <form action="http://localhost:8080/diplomado/index.php/academicoseleccionado/lista_seleccionados" method="post">
+                        <form action="http://localhost:80/diplomado/index.php/academicoseleccionado/lista_seleccionados" method="post">
                             <div class="">
                                 <div class="input-group">
                                     <input type="text" id="" name="txtBuscarS" class="form-control" placeholder="Buscar Academico por Nombre, CI, Profesion, Grado.. " value="<?= set_value('txtBuscar'); ?>">

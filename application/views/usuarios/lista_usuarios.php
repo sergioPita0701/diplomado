@@ -99,7 +99,7 @@
 <div class="modal fade bs-eliminarUsuario-modal-sm" id="eliminarUsuario" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
     <div class="modal-dialog modal-sm" role="document">
         <div class="modal-content">
-            <!-- <form  action="http://localhost:8080/diplomado/index.php/usuario/eliminarUsuario" method="POST" class="form" role="form"> -->
+            <!-- <form  action="http://localhost:80/diplomado/index.php/usuario/eliminarUsuario" method="POST" class="form" role="form"> -->
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                 <h4 class="modal-title" id="myModalLabel"> <small>Desea realmente Eliminar al Usuario?</small> </h4>
@@ -123,7 +123,7 @@
 <div class="modal fade bs-example-modal-lg" id="modalEditUsuario" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
-            <form action="http://localhost:8080/diplomado/index.php/usuario/editarUsuario" method="POST" class="form" role="form">
+            <form action="http://localhost:80/diplomado/index.php/usuario/editarUsuario" method="POST" class="form" role="form">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                     <h4 class="modal-title" id="myModalLabel">

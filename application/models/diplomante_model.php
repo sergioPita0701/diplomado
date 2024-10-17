@@ -79,5 +79,36 @@ class Diplomante_model extends CI_Model
         $query = $this->db->get();
         return $query->row();
     }
-    
+    public function getDiplomanteByCiDLike($ciD)
+    {
+        // Usar expresión regular para capturar solo los dígitos
+        if (preg_match('/\d+/', $ciD, $matches)) {
+        
+            $number = $matches[0]; // Captura solo los dígitos
+        } else {
+            return null; // Si no se encuentra un número, retorna null
+        }
+
+        // Realizar la consulta a la base de datos utilizando LIKE
+        $this->db->select('*');
+        $this->db->from('diplomante');
+        // Utilizar LIKE para buscar el número en ciD
+        $this->db->like('ciD', $number);
+        $query = $this->db->get();
+        return $query->row();
+    }
+    public function insertarDiplomante ($data){
+        
+        $this->db->insert('diplomante', $data);
+        return $this->db->insert_id();
+    }
+    public function getDiplomanteById($idDiplomante)
+    {
+        $this->db->select('*');
+        $this->db->from('diplomante');
+        $this->db->where('idDiplomante', $idDiplomante);
+        $query = $this->db->get();
+        return $query->row();
+    }
+   
 }

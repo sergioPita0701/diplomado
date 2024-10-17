@@ -223,4 +223,26 @@ class Version_model extends CI_Model
         $result = $query->row_array();
         return $result['total_modulos'];
     }
+    public function getExportarcionCsv($idVersion)
+    {
+        $this->db->select('
+        d.*,
+        v.*,
+        t.*,
+        i.*,
+        des.*,
+        SUM(p.montoP) as totalPagos' // Cambia 'monto' al nombre correcto del campo que representa el monto de pago
+        );
+    $this->db->from('pago p');
+    $this->db->join('transaccion t', 'p.idTransaccion = t.idTransaccion', 'left');
+    $this->db->join('inscripcion i', 't.idInscripcion = i.idInscripcion', 'left');   
+    $this->db->join('version v', 'v.idVersion = i.idVersion', 'left');
+    $this->db->join('diplomante d', 'i.idDiplomante = d.idDiplomante', 'left');
+    $this->db->join('descuento des', 'des.idDescuento = t.idDescuento', 'left');
+    $this->db->where('v.idVersion', $idVersion);
+    $this->db->group_by('t.idTransaccion, i.idInscripcion, v.idVersion, d.idDiplomante');
+    
+    $query = $this->db->get();
+    return $query->result_array();
+    }
 }

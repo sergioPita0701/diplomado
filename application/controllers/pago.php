@@ -16,6 +16,7 @@ class Pago extends CI_Controller
         $this->load->model('modulo_model');
         $this->load->model('paralelo_model');
         $this->load->model('inscripcion_model');
+        $this->load->model('descuento_model');
     }
 
     public function index()
@@ -34,7 +35,8 @@ class Pago extends CI_Controller
             'nombre' => $this->session->userdata('nombreV'),
             'modulo' => $this->modulo_model->getModulo($version),
             'paralelo' => $this->paralelo_model->getParalelo($version),
-            'pagos' => $this->pago_model->getPagos()
+            'pagos' => $this->pago_model->getPagos(),
+            'descuento' => $this->descuento_model->getDescuentos()
         );
         $this->load->view('plantillas/encabezado');
         $this->load->view('plantillas/navegador');
@@ -44,6 +46,9 @@ class Pago extends CI_Controller
                 $this->load->view('plantillas/menu_secretario', $data);
                 break;
             case 'Coordinador':
+                $this->load->view('plantillas/menu_coordinador', $data);
+                break;
+            case 'Administrador':
                 $this->load->view('plantillas/menu_coordinador', $data);
                 break;
             default:

@@ -81,4 +81,53 @@ class Transaccion_model extends CI_Model
         // Retornar el ID de la inscripción
         return $idTransaccion;
     }
+    public function getTransaccionesSearch($search = '')
+    {
+        // Inicializar la consulta base
+        $this->db->select('trans.*, ins.*, dip.*, ver.*, des.*, SUM(pag.montoTotalBsP) as sumaPagos');
+        $this->db->select('trans.idTransaccion, ins.*, dip.ciD,dip.nombreD as nombreDiplomante,dip.apellidoPaternoD,dip.apellidoMaternoD, ver.*, des.*, SUM(pag.montoTotalBsP) as sumaPagos');
+        $this->db->from('transaccion as trans');
+        $this->db->join('inscripcion as ins', 'trans.idInscripcion = ins.idInscripcion');
+        $this->db->join('descuento as des', 'trans.idDescuento = des.idDescuento', 'left');
+        $this->db->join('pago as pag', 'pag.idTransaccion = trans.idTransaccion', 'left');
+        $this->db->join('version as ver', 'ins.idVersion = ver.idVersion', 'left');
+        $this->db->join('diplomante as dip', 'ins.idDiplomante = dip.idDiplomante', 'left');
+        $this->db->group_by('trans.idTransaccion');
+
+      
+        if (!empty($search)) {
+
+            
+            $this->db->like('ins.ciI', $search); // Reemplaza 'nombreCampo' con el nombre real del campo a buscar
+            $this->db->or_like('dip.nombreD', $search);
+            $this->db->or_like('dip.apellidoPaternoD', $search);
+            $this->db->or_like('dip.apellidoMaternoD', $search);
+        }
+
+        // Ejecutar la consulta
+        $query = $this->db->get();
+        // Devolver los resultados
+        return $query->result_array();
+    }
+
+    public function getTransaccionesSearchByIdVersion($idVersion)
+    {
+        // Inicializar la consulta base
+        $this->db->select('trans.*, ins.*, dip.*, ver.*, des.*, SUM(pag.montoTotalBsP) as sumaPagos');
+        $this->db->select('trans.idTransaccion, ins.*, dip.ciD,dip.nombreD as nombreDiplomante,dip.apellidoPaternoD,dip.apellidoMaternoD, ver.*, des.*, SUM(pag.montoTotalBsP) as sumaPagos');
+        $this->db->from('transaccion as trans');
+        $this->db->join('inscripcion as ins', 'trans.idInscripcion = ins.idInscripcion');
+        $this->db->join('descuento as des', 'trans.idDescuento = des.idDescuento', 'left');
+        $this->db->join('pago as pag', 'pag.idTransaccion = trans.idTransaccion', 'left');
+        $this->db->join('version as ver', 'ins.idVersion = ver.idVersion', 'left');
+        $this->db->join('diplomante as dip', 'ins.idDiplomante = dip.idDiplomante', 'left');
+        $this->db->group_by('trans.idTransaccion');
+        $this->db->where('ver.idVersion', $idVersion);
+      
+    
+        // Ejecutar la consulta
+        $query = $this->db->get();
+        // Devolver los resultados
+        return $query->result_array();
+    }
 }

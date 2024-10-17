@@ -1,6 +1,6 @@
 <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
     <div class="row">
-        <form class="form-horizontal" id="formdefensa" action="http://localhost:8080/diplomado/index.php/defensa/crear_defensa" method="post"><!-- -->
+        <form class="form-horizontal" id="formdefensa" action="http://localhost:80/diplomado/index.php/defensa/crear_defensa" method="post"><!-- -->
             <div class="row">
                 <div class="col-md-8 col-md-offset-">
                     <div class="row">

@@ -7,7 +7,7 @@
                 <hr>
                 <div class="row">
                     <div class="col-md-2 col-md-offset-1">
-                        <a href="http://localhost:8080/diplomado/index.php/version_cerrada/lista_tutoria_imprimir/?nombrev=<?= $nombre ?>"><span class="glyphicon glyphicon-download-alt"></span> Imprimir</a>
+                        <a href="http://localhost:80/diplomado/index.php/version_cerrada/lista_tutoria_imprimir/?nombrev=<?= $nombre ?>"><span class="glyphicon glyphicon-download-alt"></span> Imprimir</a>
                     </div>
 
                 </div>

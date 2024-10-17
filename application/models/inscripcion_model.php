@@ -154,6 +154,20 @@ class inscripcion_model extends CI_Model
         $result = $query->row_array();
         return $result['total_asignaciones'];
     }
+    public function insertarInscripcion($data)
+    {
+        $this->db->insert('inscripcion', $data);
+        return $this->db->insert_id();
+    }
+    public function getInscripcionById($idInscripcion)
+    {
+        $this->db->select('*');
+        $this->db->from('inscripcion');
+        $this->db->where('idInscripcion', $idInscripcion);
+        $query = $this->db->get();
+        return $query->row();
+    }
+ 
     // public function editarInscripcion($nommod,$ciudmod,$profmod)//nos usa
     // {
     //     $sql="UPDATE doplomado SET nombreD=$nommod,ciudadD=$ciudmod,profecionD=$profmod

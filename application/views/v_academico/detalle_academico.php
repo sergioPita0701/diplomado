@@ -181,7 +181,7 @@
                 <h5 class="modal-title" id="pciA"> </h5>
             </div>
             <div class="modal-body">
-                <form class="form" role="form" action="http://localhost:8080/diplomado/index.php/academico/editarAcademico" method="post">
+                <form class="form" role="form" action="http://localhost:80/diplomado/index.php/academico/editarAcademico" method="post">
                     <div class="row">
                         <div class="col-md-10 col-md-offset-1">
                             <div class="row">
@@ -267,7 +267,7 @@
                 <h5 class="modal-title">Eliminar Profesion/Carrera de <?= $academico[0]['nombreA']; ?> </h5>
             </div>
             <div class="modal-body">
-                <form class="form" role="form" action="http://localhost:8080/diplomado/index.php/academicoprofesion/eliminarProfesionAcad" method="post">
+                <form class="form" role="form" action="http://localhost:80/diplomado/index.php/academicoprofesion/eliminarProfesionAcad" method="post">
                     <div class="row">
                         <div class="col-md-10 ">
                             <div class="row">
@@ -323,7 +323,7 @@
             </div>
             <div class="modal-body">
                 <div class="row">
-                    <form class="form" role="form" action="http://localhost:8080/diplomado/index.php/academicoprofesion/crearAcademicoProfesion" method="post">
+                    <form class="form" role="form" action="http://localhost:80/diplomado/index.php/academicoprofesion/crearAcademicoProfesion" method="post">
                         <div class="row">
                             <div class="col-md-8 col-md-offset-2">
                                 <div class="form-group">
@@ -380,7 +380,7 @@
                 <h4 class="modal-title" id="exampleModalLabel"><small>Asignar Estudios de Posgrado e Investigacion de <strong><?= $academico[0]['nombreA']; ?></strong></small></h4>
             </div>
             <div class="modal-body">
-                <form class="form" role="form" action="http://localhost:8080/diplomado/index.php/academicoespecialidad/crearAcademicoEspecialidad" method="post">
+                <form class="form" role="form" action="http://localhost:80/diplomado/index.php/academicoespecialidad/crearAcademicoEspecialidad" method="post">
                     <div class="row">
                         <div class="ccol-md-8 col-md-offset-2">
                             <div class="form-group">

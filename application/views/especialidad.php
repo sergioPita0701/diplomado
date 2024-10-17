@@ -2,7 +2,7 @@
 <div class="col-sm-9 col-sm-offset-3 col-md-9 col-md-offset-3 ">
     <div class="row">
         <div class="col-md-10">
-            <form class="form" role="form" action="http://localhost:8080/diplomado/index.php/especialidad/crearEspecialidad" method="post">
+            <form class="form" role="form" action="http://localhost:80/diplomado/index.php/especialidad/crearEspecialidad" method="post">
                 <div class="panel panel-primary">
                     <div class="panel-heading" data-toggle="collapse" href="#collapseEspecialidad">
                         <div class="panel-title text-primary"><small>Categoria de Postgrado / Est. Superior / Especialidad</small></div>
@@ -36,7 +36,7 @@
             <!-- </br><h4>Buscar Profesion por: </h4> -->
             <div class="">
                 <div class="form-inline col-md-12" style="text-align:right">
-                    <form action="http://localhost:8080/diplomado/index.php/especialidad/buscarEspecialidad" method="post">
+                    <form action="http://localhost:80/diplomado/index.php/especialidad/buscarEspecialidad" method="post">
                         <input type="submit" class="btn btn-primary btn-sm" value="Buscar">
                         <input type="text" class="form-control input-sm" name="txtBuscarEs" placeholder="Ej.Doctorado, Maestria, etc." /></br>
                     </form>
@@ -84,7 +84,7 @@
                                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                                                     <h4 class="modal-title" id="myModalLabel">Ver Especialidad</h4>
                                                 </div>
-                                                <form action="http://localhost:8080/diplomado/index.php/especialidad/editarEspecialidad" method="POST" role="form">
+                                                <form action="http://localhost:80/diplomado/index.php/especialidad/editarEspecialidad" method="POST" role="form">
                                                     <div class="modal-body">
                                                         <div class="row">
                                                             <div class="col-md-10 col-md-offset-1">

@@ -1,0 +1,42 @@
+Columna1,Columna2,Columna3
+
+<div style="border:1px solid #990000;padding-left:20px;margin:0 0 10px 0;">
+
+<h4>A PHP Error was encountered</h4>
+
+<p>Severity: Warning</p>
+<p>Message:  fputcsv() expects parameter 2 to be array, string given</p>
+<p>Filename: controllers/csv.php</p>
+<p>Line Number: 82</p>
+
+
+	<p>Backtrace:</p>
+	
+		
+	
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: C:\xampp\htdocs\diplomado\application\controllers\csv.php<br />
+			Line: 82<br />
+			Function: fputcsv			</p>
+
+		
+	
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: C:\xampp\htdocs\diplomado\index.php<br />
+			Line: 315<br />
+			Function: require_once			</p>
+
+		
+	
+
+</div>

@@ -58,4 +58,12 @@ class Descuento_model extends CI_Model
         $query = $this->db->get();
         return $query->row();
     }
+    public function getDescuentoByPorcentaje($porcentajeD)
+    {
+        $this->db->select('*');
+        $this->db->from('descuento');
+        $this->db->where('porcentajeD', $porcentajeD);
+        $query = $this->db->get();
+        return $query->row();
+    }
 }

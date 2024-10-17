@@ -74,7 +74,7 @@
 <div class="modal fade bs-eliminarVersion-modal-sm" id="eliminarVersion" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
   <div class="modal-dialog modal-sm" role="document">
     <div class="modal-content">
-      <!-- <form  action="http://localhost:8080/diplomado/index.php/usuario/terminarVersion" method="POST" class="form" role="form"> -->
+      <!-- <form  action="http://localhost:80/diplomado/index.php/usuario/terminarVersion" method="POST" class="form" role="form"> -->
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="myModalLabel"> <small class="text text-danger text-uppercase">Desea realmente Finalizar la Versión?</small> </h4>
@@ -103,7 +103,7 @@
 <div class="modal fade bs-fechaInscripciones-modal-sm" id="fechaInscripciones" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
   <div class="modal-dialog modal-sm" role="document">
     <div class="modal-content">
-      <!-- <form  action="http://localhost:8080/diplomado/index.php/usuario/terminarVersion" method="POST" class="form" role="form"> -->
+      <!-- <form  action="http://localhost:80/diplomado/index.php/usuario/terminarVersion" method="POST" class="form" role="form"> -->
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="myModalLabel"> <small class="text text-primary text-uppercase">Definir Fecha de Inscripciones</small> </h4>

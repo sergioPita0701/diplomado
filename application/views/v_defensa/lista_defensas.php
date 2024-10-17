@@ -8,7 +8,7 @@
                 <hr>
                 <div class="row">
                     <div class="col-md-5 col-md-offset-6">
-                        <form action="http://localhost:80/diplomado/index.php/defensa/lista_defensas" method="post">
+                        <form action="http://10.4.25.3:8080/diplomado/index.php/defensa/lista_defensas" method="post">
                             <div class="">
                                 <div class="input-group">
                                     <input type="text" id="" name="buscaciD" class="form-control input-sm" placeholder="Buscar Defensa por CI de Participante " value="<?= set_value('txtBuscar'); ?>">
@@ -390,7 +390,7 @@
 <!-- <div class="modal fade bs-eliminarDefensa-modal-sm" id="eliminarDefensa" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
   <div class="modal-dialog modal-sm" role="document">
     <div class="modal-content">
-        <form  action="http://localhost:80/diplomado/index.php/usuario/eliminarUsuario" method="POST" class="form" role="form">
+        <form  action="http://10.4.25.3:8080/diplomado/index.php/usuario/eliminarUsuario" method="POST" class="form" role="form">
             
             <div class="modal-body">
                 <p><small><strong>Desea Eliminar Realmente la Defensa, Se eliminaran todas sus relaciones?</strong></small></p>

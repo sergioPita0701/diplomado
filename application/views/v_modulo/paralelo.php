@@ -15,7 +15,7 @@
                 </div>
                 <div class="row">
                     <div class="col-md-6 col-md-offset-3">
-                        <form action="http://localhost:80/diplomado/index.php/paralelo/crearParalelo" method="POST" class="form-horizontal" role="form">
+                        <form action="http://10.4.25.3:8080/diplomado/index.php/paralelo/crearParalelo" method="POST" class="form-horizontal" role="form">
                             <div class="row">
                                 <div class="panel panel-default">
                                     <div class="panel-body ">
@@ -129,7 +129,7 @@
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                 <h4 class="modal-title" id="myModalLabel">Ver Detalles del Paralelo</h4>
             </div>
-            <!-- <form action="http://localhost:80/diplomado/index.php/paralelo/editarParalelo" method="POST" role="form"> -->
+            <!-- <form action="http://10.4.25.3:8080/diplomado/index.php/paralelo/editarParalelo" method="POST" role="form"> -->
             <div class="modal-body list-group">
                 <div class="row">
                     <div class="col-md-4 col-md-offset-4">

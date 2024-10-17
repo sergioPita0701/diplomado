@@ -10,7 +10,7 @@
                     </div></br>
                     <div class="row">
                         <div class="col-md-10 col-md-offset-1">
-                            <form action="http://localhost:80/diplomado/index.php/docencia/registroDocencia" method="post">
+                            <form action="http://10.4.25.3:8080/diplomado/index.php/docencia/registroDocencia" method="post">
                                 <div class="input-group">
                                     <h4><em>Seleccione un Academico candidato a Docencia de la siguiente lista, si no existe el academico que quiere, dirijase a la pestaña de Academicos>Nuevo Academico( Para registrar uno nuevo) ó Lista de Academícos>Todos>marcar bien (para seleccionar un academico como Docente o Tutor): </em></h4>
                                     <select multiple class="form-control input-sm" name="txtbuscarD">
@@ -97,7 +97,7 @@
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <form class="form-horizontal" id="formasigdoc" method="post"> <!--action="http://localhost:80/diplomado/index.php/docencia/crearDocencia_paralelo"-->
+                            <form class="form-horizontal" id="formasigdoc" method="post"> <!--action="http://10.4.25.3:8080/diplomado/index.php/docencia/crearDocencia_paralelo"-->
                                 <div class="row">
                                     <div class="col-md-12">
                                         <input type="hidden" name="ciAcadDoc" id="ciAcadDoc" class="form-control input-sm" value="<?= $academico[0]['ciA']; ?>" readonly>

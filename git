@@ -39,8 +39,8 @@ Date:   Mon Jul 23 18:22:19 2018 -0400
  | a PHP script and you can easily do that on your own.[m
  |[m
  */[m
-[31m-$config['base_url'] = 'http://localhost:80/diplomado/CodeIgniter';[m
-[32m+[m[32m$config['base_url'] = 'http://localhost:80/diplomado/';[m
+[31m-$config['base_url'] = 'http://10.4.25.3:8080/diplomado/CodeIgniter';[m
+[32m+[m[32m$config['base_url'] = 'http://10.4.25.3:8080/diplomado/';[m
  [m
  /*[m
  |--------------------------------------------------------------------------[m

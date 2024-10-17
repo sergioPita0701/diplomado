@@ -122,7 +122,7 @@
     if (ci.length > 0) {
       $.ajax({
         type: 'post',
-        url: "http://localhost:80/diplomado/index.php/diplomante/buscarDiplomante",
+        url: "http://10.4.25.3:8080/diplomado/index.php/diplomante/buscarDiplomante",
         data: {
           txtci: ci,
         },
@@ -243,7 +243,7 @@
                 } else {
                   $.ajax({
                     type: 'post',
-                    url: "http://localhost:80/diplomado/index.php/diplomante/crearDiplomante",
+                    url: "http://10.4.25.3:8080/diplomado/index.php/diplomante/crearDiplomante",
                     data: {
                       txtci: ci,
                       txtNombreD: nombre,
@@ -313,7 +313,7 @@
     // alert(apepaternod);
     $.ajax({
       type: 'post',
-      url: "http://localhost:80/diplomado/index.php/diplomante/editarDiplomante",
+      url: "http://10.4.25.3:8080/diplomado/index.php/diplomante/editarDiplomante",
       data: {
         textoCiDi: cid,
         textoNombreDi: nombred,
@@ -343,7 +343,7 @@
         }, 5000);
       }
       // $('#modalNotificaciones').modal('toggle');
-      // window.location.load('http://localhost:80/diplomado/index.php/inscripcion/detalleDiplomante_inscrito/'+data);
+      // window.location.load('http://10.4.25.3:8080/diplomado/index.php/inscripcion/detalleDiplomante_inscrito/'+data);
       // window.location;
       // $("#datospersonal").reload(true);
       // $("#datospersonal").load();
@@ -378,7 +378,7 @@
 
     $.ajax({
       type: 'post',
-      url: "http://localhost:80/diplomado/index.php/inscripcion/editarInscripcion",
+      url: "http://10.4.25.3:8080/diplomado/index.php/inscripcion/editarInscripcion",
       data: {
         textociDI: cid,
         textoNumI: numi,
@@ -442,7 +442,7 @@
   //   $.ajax(
   //     {
   //       type:'post',
-  //       url:"http://localhost:80/diplomado/index.php/inscripcion/fechaActual",
+  //       url:"http://10.4.25.3:8080/diplomado/index.php/inscripcion/fechaActual",
   //       data:{
   //           txtFechaInscI:fechaai,
   //       },
@@ -473,7 +473,7 @@
     // $("#mnsjFechaInsc").html('');
     $.ajax({
       type: 'post',
-      url: "http://localhost:80/diplomado/index.php/inscripcion/habilitar_inscripcion",
+      url: "http://10.4.25.3:8080/diplomado/index.php/inscripcion/habilitar_inscripcion",
       data: {
         fechainscripcion: fechainsc
       },
@@ -502,7 +502,7 @@
       } else {
         $.ajax({
           type: 'post',
-          url: "http://localhost:80/diplomado/index.php/paralelo/get_paralelosde_modulo",
+          url: "http://10.4.25.3:8080/diplomado/index.php/paralelo/get_paralelosde_modulo",
           data: {
             modulo: nummodulo
           },
@@ -559,7 +559,7 @@
           fechaAsignacion = $("#fechaAsignacion").val();
           $.ajax({
             type: "POST",
-            url: "http://localhost:80/diplomado/index.php/modulodiplomante/asignarModuloaDiplo",
+            url: "http://10.4.25.3:8080/diplomado/index.php/modulodiplomante/asignarModuloaDiplo",
             // data: dataString,
             data: {
               numInscripcion: numInscripcion,
@@ -601,7 +601,7 @@
     console.log(ci);
     $.ajax({
       type: 'post',
-      url: "http://localhost:80/diplomado/index.php/diplomante/inscribirModulo",
+      url: "http://10.4.25.3:8080/diplomado/index.php/diplomante/inscribirModulo",
       data: {
         txtci: ci,
       },
@@ -616,7 +616,7 @@
           } else {
             $.ajax({
               type: 'post',
-              url: "http://localhost:80/diplomado/index.php/diplomante/inscribirMonografia",
+              url: "http://10.4.25.3:8080/diplomado/index.php/diplomante/inscribirMonografia",
               data: {
                 txtci: ci,
               },
@@ -643,7 +643,7 @@
     console.log(ci);
     $.ajax({
       type: 'post',
-      url: "http://localhost:80/diplomado/index.php/diplomante/inscribirModulo",
+      url: "http://10.4.25.3:8080/diplomado/index.php/diplomante/inscribirModulo",
       data: {
         txtci: ci,
       },
@@ -651,7 +651,7 @@
         // data=JSON.parse(data);
         console.log(data);
         if (data == 0 || data == 'nohayasignamd') {
-          $.getJSON('http://localhost:80/diplomado/index.php/diplomante/get_primer_modulo', function(data) {
+          $.getJSON('http://10.4.25.3:8080/diplomado/index.php/diplomante/get_primer_modulo', function(data) {
             // data=JSON.parse(data);
             numeroMod = data[0]['numeroM'];
             nombreMod = data[0]['nombreM'];
@@ -662,7 +662,7 @@
             $("#modulosele").val(data[0]['numeroM']);
             $.ajax({
               type: 'post',
-              url: "http://localhost:80/diplomado/index.php/paralelo/get_paralelosde_modulo",
+              url: "http://10.4.25.3:8080/diplomado/index.php/paralelo/get_paralelosde_modulo",
               data: {
                 modulo: numeroMod
               },
@@ -695,7 +695,7 @@
             $("#modulosele").val(datos[0]['numeroM']);
             $.ajax({
               type: 'post',
-              url: "http://localhost:80/diplomado/index.php/paralelo/get_paralelosde_modulo",
+              url: "http://10.4.25.3:8080/diplomado/index.php/paralelo/get_paralelosde_modulo",
               data: {
                 modulo: numeroMod
               },
@@ -793,7 +793,7 @@
     console.log(ci);
     $.ajax({
       type: 'post',
-      url: "http://localhost:80/diplomado/index.php/diplomante/inscribirMonografia",
+      url: "http://10.4.25.3:8080/diplomado/index.php/diplomante/inscribirMonografia",
       data: {
         txtci: ci,
       },
@@ -807,14 +807,14 @@
           data = JSON.parse(data);
           console.log("ELIAQUIESTOOOY");
           $('#academicosSeleS').html('');
-          $.getJSON('http://localhost:80/diplomado/index.php/academicoseleccionado/getTodosAcademicoSelec', function(data) {
+          $.getJSON('http://10.4.25.3:8080/diplomado/index.php/academicoseleccionado/getTodosAcademicoSelec', function(data) {
             $.each(data, function(key, registro) {
               $('#academicosSeleS').append('<option value=' + registro.idRegistroAV + ' >' + registro.nombreA + '</option></br>');
             });
           });
 
           $('#academicosSeleP').html('');
-          $.getJSON('http://localhost:80/diplomado/index.php/academicoseleccionado/getTodosAcademicoSelec', function(data) {
+          $.getJSON('http://10.4.25.3:8080/diplomado/index.php/academicoseleccionado/getTodosAcademicoSelec', function(data) {
             $.each(data, function(key, registro) {
               $('#academicosSeleP').append('<option value=' + registro.idRegistroAV + ' >' + registro.nombreA + '</option></br>');
             });
@@ -822,7 +822,7 @@
           //solo muestra un mensaje para regsitrar defensa debe ir a la lista de monos,,, HACER LO QUE SIGUEE!!!!..
           $.ajax({
             type: 'post',
-            url: "http://localhost:80/diplomado/index.php/defensa/getDefensa_porci",
+            url: "http://10.4.25.3:8080/diplomado/index.php/defensa/getDefensa_porci",
             data: {
               cidiplo: ci
             },
@@ -926,7 +926,7 @@
         if (campoparalelo != null) {
           $.ajax({
             type: 'post',
-            url: "http://localhost:80/diplomado/index.php/modulodiplomante/editarParaleloDiplomante",
+            url: "http://10.4.25.3:8080/diplomado/index.php/modulodiplomante/editarParaleloDiplomante",
             data: {
               checked: campochecked,
               numInscripcion: camporegistro,
@@ -1036,7 +1036,7 @@
 
         $.ajax({
           type: 'post',
-          url: "http://localhost:80/diplomado/index.php/calificacion/registrar_nota",
+          url: "http://10.4.25.3:8080/diplomado/index.php/calificacion/registrar_nota",
           data: {
             ciDiplo: campoci,
             nota: camponota,
@@ -1093,7 +1093,7 @@
     // alert(cisele,nombresele);
     $.ajax({
       type: "POST",
-      url: "http://localhost:80/diplomado/index.php/calificacion/kardex",
+      url: "http://10.4.25.3:8080/diplomado/index.php/calificacion/kardex",
       data: {
         ciDiplomante: cisele
       },
@@ -1113,7 +1113,7 @@
     });
     $.ajax({
       type: "POST",
-      url: "http://localhost:80/diplomado/index.php/calificacion/kardexMonografia",
+      url: "http://10.4.25.3:8080/diplomado/index.php/calificacion/kardexMonografia",
       data: {
         ciDiplomante: cisele
       },
@@ -1205,7 +1205,7 @@
 
           $.ajax({
             type: "POST",
-            url: "http://localhost:80/diplomado/index.php/docencia/crearDocencia_paralelo",
+            url: "http://10.4.25.3:8080/diplomado/index.php/docencia/crearDocencia_paralelo",
             data: {
               ciAcadDoc: ciAcadDoc,
               modulosele: modulosele,
@@ -1249,7 +1249,7 @@
     console.log(docencia);
     $.ajax({
       type: 'POST',
-      url: "http://localhost:80/diplomado/index.php/docencia/obtenerDatos_docencia",
+      url: "http://10.4.25.3:8080/diplomado/index.php/docencia/obtenerDatos_docencia",
       data: {
         docencia: docencia
       },
@@ -1280,7 +1280,7 @@
 
     $.ajax({
       type: 'POST',
-      url: "http://localhost:80/diplomado/index.php/docencia/editarDatos_docencia",
+      url: "http://10.4.25.3:8080/diplomado/index.php/docencia/editarDatos_docencia",
       data: {
         docencia: docencia,
         fechaIni: fechaIni,
@@ -1364,7 +1364,7 @@
         //  console.log(ciDiplo+","+tituloMono+","++","+realizamono);
         $.ajax({
           type: "POST",
-          url: "http://localhost:80/diplomado/index.php/tutoria/crearTutoriaMonografia",
+          url: "http://10.4.25.3:8080/diplomado/index.php/tutoria/crearTutoriaMonografia",
           data: {
             realizamono: realizamono,
             pciTutor: pciTutor,
@@ -1384,7 +1384,7 @@
             } else {
               // $("#msjtutoria").html('<p class="alert alert-info"><span class="glyphicon glyphicon-ok" ></span><small> Tutoría Registrada Exitosamente!!! </small><span class="glyphicon glyphicon-thumbs-up" ></span></p>').fadeIn();
               // $("#msjtutoria").show();                    
-              window.location.href = "http://localhost:80/diplomado/index.php/tutoria/imprimirpdftutoria/" + $("#realizamono").val();
+              window.location.href = "http://10.4.25.3:8080/diplomado/index.php/tutoria/imprimirpdftutoria/" + $("#realizamono").val();
 
             }
           },
@@ -1405,7 +1405,7 @@
     console.log(realizaMono);
     $.ajax({
       type: 'POST',
-      url: "http://localhost:80/diplomado/index.php/tutoria/obtenerDatos_deTutoria",
+      url: "http://10.4.25.3:8080/diplomado/index.php/tutoria/obtenerDatos_deTutoria",
       data: {
         realizamono: realizaMono
       },
@@ -1448,7 +1448,7 @@
 
     $.ajax({
       type: 'POST',
-      url: "http://localhost:80/diplomado/index.php/tutoria/obtenerDatos_deTutoria",
+      url: "http://10.4.25.3:8080/diplomado/index.php/tutoria/obtenerDatos_deTutoria",
       data: {
         realizamono: realizaMono
       },
@@ -1485,7 +1485,7 @@
     console.log(monografia + "," + academico + "," + fechaini + "," + fechaafinal + "," + carta + "," + fechacarta + "," + cancela + "," + resultado + "," + observacion);
     $.ajax({
       type: 'POST',
-      url: "http://localhost:80/diplomado/index.php/tutoria/editarTutoriaMonografia",
+      url: "http://10.4.25.3:8080/diplomado/index.php/tutoria/editarTutoriaMonografia",
       data: {
         realizamono: monografia,
         editTutor: academico,
@@ -1522,7 +1522,7 @@
     if (this.checked == true) {
       $("#academicoAV").removeAttr('disabled');
       $("#btncambTut").removeAttr('disabled');
-      $.getJSON('http://localhost:80/diplomado/index.php/academicoseleccionado/getTodosAcademicoSelec', function(data) {
+      $.getJSON('http://10.4.25.3:8080/diplomado/index.php/academicoseleccionado/getTodosAcademicoSelec', function(data) {
         console.log(data);
         $.each(data, function(key, registro) {
           $('#academicoAV').append('<option value=' + registro.idRegistroAV + '>' + registro.nombreA + '</option>');
@@ -1564,7 +1564,7 @@
   //   $.ajax(
   //     {
   //       type:'POST',
-  //       url:"http://localhost:80/diplomado/index.php/academicoseleccionado/getAcademicoSelec",
+  //       url:"http://10.4.25.3:8080/diplomado/index.php/academicoseleccionado/getAcademicoSelec",
   //       data:{
   //         ciacad:aci,
   //       },
@@ -1590,7 +1590,7 @@
     console.log(mono);
     $.ajax({
       type: 'POST',
-      url: "http://localhost:80/diplomado/index.php/monografia/getmonoDiplomante",
+      url: "http://10.4.25.3:8080/diplomado/index.php/monografia/getmonoDiplomante",
       data: {
         realizamono: mono,
       },
@@ -1638,7 +1638,7 @@
     console.log(mono);
     $.ajax({
       type: 'POST',
-      url: "http://localhost:80/diplomado/index.php/defensa/obtenerDefensa_porMono",
+      url: "http://10.4.25.3:8080/diplomado/index.php/defensa/obtenerDefensa_porMono",
       data: {
         realizamono: mono
       },
@@ -1676,7 +1676,7 @@
         } else {
           $.ajax({
             type: 'POST',
-            url: "http://localhost:80/diplomado/index.php/monografia/getmonoDiplomante",
+            url: "http://10.4.25.3:8080/diplomado/index.php/monografia/getmonoDiplomante",
             data: {
               realizamono: mono,
             },
@@ -1735,7 +1735,7 @@
     // console.log(dato);
     $.ajax({
       type: 'post',
-      url: "http://localhost:80/diplomado/index.php/academico/escogerProfesion",
+      url: "http://10.4.25.3:8080/diplomado/index.php/academico/escogerProfesion",
       data: {
         nombrep: dato,
       },
@@ -1759,7 +1759,7 @@
     if (ciA.length > 0) {
       $.ajax({
         type: 'post',
-        url: "http://localhost:80/diplomado/index.php/academico/buscarAcademico",
+        url: "http://10.4.25.3:8080/diplomado/index.php/academico/buscarAcademico",
         data: {
           txtCiA: ciA
         },
@@ -1850,7 +1850,7 @@
 
     $.ajax({
       type: 'post',
-      url: "http://localhost:80/diplomado/index.php/academicoprofesion/obtenerProfesiones",
+      url: "http://10.4.25.3:8080/diplomado/index.php/academicoprofesion/obtenerProfesiones",
       data: {
         txtci: aci,
       },
@@ -1864,7 +1864,7 @@
           // a.on('click',function(event){
           //   alert('ajhd');
           // }));
-          // $('#botonEliminar').append('<a onclick="llamadaAjax()"> type="button" href="http://localhost:80/diplomado/index.php/academicoprofesion/eliminarProfesionAcad?ci='+aci+'&& prof='+registro.nombreP+'">Eliminar</a></br> ');
+          // $('#botonEliminar').append('<a onclick="llamadaAjax()"> type="button" href="http://10.4.25.3:8080/diplomado/index.php/academicoprofesion/eliminarProfesionAcad?ci='+aci+'&& prof='+registro.nombreP+'">Eliminar</a></br> ');
           // $('#botonEliminar').append('<a onclick="eliminarprofacad()">Eliminar</a></br> ');
         });
 
@@ -1904,7 +1904,7 @@
 
     $('#textoCi').val(aci);
 
-    $.getJSON('http://localhost:80/diplomado/index.php/especialidad/obtenerEspecialidades', function(data) {
+    $.getJSON('http://10.4.25.3:8080/diplomado/index.php/especialidad/obtenerEspecialidades', function(data) {
       console.log(data);
       $.each(data, function(key, registro) {
         $('#checkModal').append('<input type="checkbox" id="" name="checkbox[]" value=' + registro.idEspecialidad + ' >' + registro.nombreE + '</br>');
@@ -1914,7 +1914,7 @@
 
     $.ajax({
       type: 'post',
-      url: "http://localhost:80/diplomado/index.php/academicoprofesion/obtenerProfesiones",
+      url: "http://10.4.25.3:8080/diplomado/index.php/academicoprofesion/obtenerProfesiones",
       data: {
         txtci: aci,
       },
@@ -1960,7 +1960,7 @@
     //  console.log(ciu);
     $.ajax({
       type: 'post',
-      url: "http://localhost:80/diplomado/index.php/usuario/getUsuario",
+      url: "http://10.4.25.3:8080/diplomado/index.php/usuario/getUsuario",
       data: {
         ciUsuario: ciu
       },
@@ -1993,7 +1993,7 @@
     //  console.log(ciu);
     $.ajax({
       type: 'post',
-      url: "http://localhost:80/diplomado/index.php/usuario/getUsuario",
+      url: "http://10.4.25.3:8080/diplomado/index.php/usuario/getUsuario",
       data: {
         ciUsuario: ciu
       },
@@ -2023,7 +2023,7 @@
     //  console.log(ciu);
     $.ajax({
       type: 'post',
-      url: "http://localhost:80/diplomado/index.php/usuario/getUsuario",
+      url: "http://10.4.25.3:8080/diplomado/index.php/usuario/getUsuario",
       data: {
         ciUsuario: ciu
       },
@@ -2044,7 +2044,7 @@
       if (ciuintroducido == ciu) {
         $.ajax({
           type: 'post',
-          url: "http://localhost:80/diplomado/index.php/usuario/eliminarUsuario",
+          url: "http://10.4.25.3:8080/diplomado/index.php/usuario/eliminarUsuario",
           data: {
             ciUsuario: ciuintroducido
           },
@@ -2174,7 +2174,7 @@
   //     $.ajax(
   //       {
   //         type:'post',
-  //         url:"http://localhost:80/diplomado/index.php/profesion/crearProfesion",
+  //         url:"http://10.4.25.3:8080/diplomado/index.php/profesion/crearProfesion",
   //         data:{
   //           data
   //         },
@@ -2207,7 +2207,7 @@
   //       $.ajax(
   //       {
   //         type:'post',
-  //         url:"http://localhost:80/diplomado/index.php/profesion/seleccionarProfesiones",
+  //         url:"http://10.4.25.3:8080/diplomado/index.php/profesion/seleccionarProfesiones",
   //         data:{
   //           selectProfesion:tipoProf
   //         },
@@ -2233,7 +2233,7 @@
     // console.log(dato);
     $.ajax({
       type: 'get',
-      url: "http://localhost:80/diplomado/index.php/profesion/getAllProfesiones",
+      url: "http://10.4.25.3:8080/diplomado/index.php/profesion/getAllProfesiones",
       data: {
 
       },
@@ -2259,7 +2259,7 @@
     if (nombrePr.length > 0) {
       $.ajax({
         type: 'post',
-        url: "http://localhost:80/diplomado/index.php/profesion/nuevaProfesion",
+        url: "http://10.4.25.3:8080/diplomado/index.php/profesion/nuevaProfesion",
         data: {
           txtNombreP: nombrePr,
           radioProfesion: tipoPr
@@ -2520,7 +2520,7 @@
     cantidad = $("#txtcantidadsele").val();
     $.ajax({
       type: 'post',
-      url: "http://localhost:80/diplomado/index.php/paralelo/existeParalelo",
+      url: "http://10.4.25.3:8080/diplomado/index.php/paralelo/existeParalelo",
       data: {
         numModulo: nummod,
         nombParalelo: nombreparalelo,
@@ -2532,7 +2532,7 @@
         if (data == '') {
           $.ajax({
             type: 'post',
-            url: "http://localhost:80/diplomado/index.php/paralelo/editarParalelo",
+            url: "http://10.4.25.3:8080/diplomado/index.php/paralelo/editarParalelo",
             data: {
               txtnumeromod: nummod,
               txtparalelosele: nombreparalelo,
@@ -2617,7 +2617,7 @@
 
           $.ajax({
             type: "POST",
-            url: "http://localhost:80/diplomado/index.php/monografia/crearMonografia_de_Diplomante",
+            url: "http://10.4.25.3:8080/diplomado/index.php/monografia/crearMonografia_de_Diplomante",
             data: {
               txtcidiplomante: ciD,
               txttituloMono: txttituloMono,
@@ -2659,7 +2659,7 @@
 
     $.ajax({
       type: 'POST',
-      url: "http://localhost:80/diplomado/index.php/monografia/getMonografiaporId",
+      url: "http://10.4.25.3:8080/diplomado/index.php/monografia/getMonografiaporId",
       data: {
         monografia: monografia
       },
@@ -2683,7 +2683,7 @@
     ovservacion = $('#editObservMo').val();
     $.ajax({
       type: 'POST',
-      url: "http://localhost:80/diplomado/index.php/monografia/editarMonografia",
+      url: "http://10.4.25.3:8080/diplomado/index.php/monografia/editarMonografia",
       data: {
         editmonografia: monografia,
         edittitulo: titulo,
@@ -2728,7 +2728,7 @@
   function iniciarV() {
 
     if (confirm('Desde este momento se Iniciara la version Actual, solo podra acceder a esta version. Desea Continuar?')) {
-      $.getJSON('http://localhost:80/diplomado/index.php/version/habilitarV', function(resp) {
+      $.getJSON('http://10.4.25.3:8080/diplomado/index.php/version/habilitarV', function(resp) {
         console.log(resp);
         $("#iniciarver").html('<p class="alert alert-info">La version durara aproximadamente ' + resp + ', Buena suerte!!</p>');
       });
@@ -2755,7 +2755,7 @@
 
     $.ajax({
       type: 'POST',
-      url: "http://localhost:80/diplomado/index.php/defensa/getDefensa_tribunal",
+      url: "http://10.4.25.3:8080/diplomado/index.php/defensa/getDefensa_tribunal",
       data: {
         iddefensa: defensa
       },
@@ -2801,7 +2801,7 @@
 
     $('#tribunal').val(trib);
     $('#diplomante').text(nombrep);
-    $.getJSON('http://localhost:80/diplomado/index.php/academicoseleccionado/getTodosAcademicoSelec', function(data) {
+    $.getJSON('http://10.4.25.3:8080/diplomado/index.php/academicoseleccionado/getTodosAcademicoSelec', function(data) {
       // console.log(data);
       $.each(data, function(key, registro) {
         $('#academicosSele').append('<option value=' + registro.idRegistroAV + ' >' + registro.nombreA + '</option></br>');
@@ -2818,7 +2818,7 @@
 
     $('#tribunal').val(trib);
     $('#diplomante').text(nombres);
-    $.getJSON('http://localhost:80/diplomado/index.php/academicoseleccionado/getTodosAcademicoSelec', function(data) {
+    $.getJSON('http://10.4.25.3:8080/diplomado/index.php/academicoseleccionado/getTodosAcademicoSelec', function(data) {
       // console.log(data);
       $.each(data, function(key, registro) {
         $('#academicosSele').append('<option value=' + registro.idRegistroAV + ' >' + registro.nombreA + '</option></br>');
@@ -2858,7 +2858,7 @@
 
         $.ajax({
           type: "POST",
-          url: "http://localhost:80/diplomado/index.php/defensa/crearDefensa_paraPie",
+          url: "http://10.4.25.3:8080/diplomado/index.php/defensa/crearDefensa_paraPie",
           data: {
             realizamono: realizamono,
             nombreDef: nombreDef,
@@ -2901,7 +2901,7 @@
     if (academico != '') {
       $.ajax({
         type: 'POST',
-        url: "http://localhost:80/diplomado/index.php/defensa/editarTribunal",
+        url: "http://10.4.25.3:8080/diplomado/index.php/defensa/editarTribunal",
         data: {
           tribunal: trib,
           academicov: academico,
@@ -2952,7 +2952,7 @@
 
     $.ajax({
       type: 'POST',
-      url: "http://localhost:80/diplomado/index.php/defensa/getDefensa_tribunal",
+      url: "http://10.4.25.3:8080/diplomado/index.php/defensa/getDefensa_tribunal",
       data: {
         iddefensa: defensa
       },
@@ -2991,7 +2991,7 @@
     } else {
       $.ajax({
         type: 'POST',
-        url: "http://localhost:80/diplomado/index.php/defensa/editarFechaDef",
+        url: "http://10.4.25.3:8080/diplomado/index.php/defensa/editarFechaDef",
         data: {
           defensa: defensaa,
           fechad: fecha
@@ -3054,7 +3054,7 @@
     }
     $.ajax({
       type: 'POST',
-      url: "http://localhost:80/diplomado/index.php/defensa/AsignarNotaDefensa",
+      url: "http://10.4.25.3:8080/diplomado/index.php/defensa/AsignarNotaDefensa",
       data: {
         defensa: defensaa,
         nota: nota,
@@ -3097,7 +3097,7 @@
 
     $.ajax({
       type: 'POST',
-      url: "http://localhost:80/diplomado/index.php/defensa/getDefensa_tribunal",
+      url: "http://10.4.25.3:8080/diplomado/index.php/defensa/getDefensa_tribunal",
       data: {
         iddefensa: defensa
       },
@@ -3135,7 +3135,7 @@
     });
     $.ajax({
       type: 'POST',
-      url: "http://localhost:80/diplomado/index.php/defensa/getDefensa_tribunal",
+      url: "http://10.4.25.3:8080/diplomado/index.php/defensa/getDefensa_tribunal",
       data: {
         iddefensa: defensa
       },
@@ -3171,7 +3171,7 @@
     // alert(ci);
     $.ajax({
       type: 'POST',
-      url: "http://localhost:80/diplomado/index.php/defensa/tribunal_aleatorio",
+      url: "http://10.4.25.3:8080/diplomado/index.php/defensa/tribunal_aleatorio",
       data: {
         tipoProf: tipoProfesion
       },
@@ -3225,7 +3225,7 @@
     // $('#modalEditarModulo').modal('toggle')
     $.ajax({
       type: 'POST',
-      url: "http://localhost:80/diplomado/index.php/academico/getAcademico_paraModalDefenza",
+      url: "http://10.4.25.3:8080/diplomado/index.php/academico/getAcademico_paraModalDefenza",
       data: {
         ciAcademico: ci
       },
@@ -3249,7 +3249,7 @@
     });
     $.ajax({
       type: 'POST',
-      url: "http://localhost:80/diplomado/index.php/academico/getAcademicoProfesion_paramodalDef",
+      url: "http://10.4.25.3:8080/diplomado/index.php/academico/getAcademicoProfesion_paramodalDef",
       data: {
         ciAcademico: ci
       },
@@ -3268,7 +3268,7 @@
     });
     $.ajax({
       type: 'POST',
-      url: "http://localhost:80/diplomado/index.php/academico/getAcademicoCompleto_paramodalDef",
+      url: "http://10.4.25.3:8080/diplomado/index.php/academico/getAcademicoCompleto_paramodalDef",
       data: {
         ciAcademico: ci
       },
@@ -3307,7 +3307,7 @@
     console.log(tipoTrib, ciTribunal);
     $.ajax({
       type: 'POST',
-      url: "http://localhost:80/diplomado/index.php/academicoseleccionado/crearSeleccionAcademico",
+      url: "http://10.4.25.3:8080/diplomado/index.php/academicoseleccionado/crearSeleccionAcademico",
       data: {
         citrib: ciTribunal
       },
@@ -3367,7 +3367,7 @@
     var directorbd = '';
 
     if (cidirector.length > 0) {
-      $.getJSON('http://localhost:80/diplomado/index.php/usuario/getDirector', function(data) {
+      $.getJSON('http://10.4.25.3:8080/diplomado/index.php/usuario/getDirector', function(data) {
         // data=JSON.parse(data);
         console.log('el id del la bd es' + data[0]['ciU']);
         directorbd = data[0]['ciU'];
@@ -3377,7 +3377,7 @@
           console.log(version);
           $.ajax({
             type: 'post',
-            url: "http://localhost:80/diplomado/index.php/version/cerrar_sesion_version",
+            url: "http://10.4.25.3:8080/diplomado/index.php/version/cerrar_sesion_version",
             data: {
               version: version,
               razonV: razon
@@ -3389,7 +3389,7 @@
                 // $("#terminarVersion").modal('hide')
               } else {
                 $("#mnsjEliminarVersion").html('<p class="alert alert-success"><span class="glyphicon glyphicon-up" ></span><small> Se cerró la Versión Actual!!!</small></p>').fadeIn();
-                window.location.href = "http://localhost:80/diplomado/index.php/version/imprimirtcpdf/" + data;
+                window.location.href = "http://10.4.25.3:8080/diplomado/index.php/version/imprimirtcpdf/" + data;
               }
             },
             // complete:function() {
@@ -3433,7 +3433,7 @@
     // LISTA DE EVENTOS QUE SE HIZO EN ESA VERSION
     $.ajax({
       type: 'post',
-      url: "http://localhost:80/diplomado/index.php/version/getEvento_vercion",
+      url: "http://10.4.25.3:8080/diplomado/index.php/version/getEvento_vercion",
       data: {
         nombreV: nombreversion
       },
@@ -3456,7 +3456,7 @@
             $('#razonv').append('<span><small><small>' + registro.razon_accionV + '</small></small></span></br></br>');
             $('#fechav').append('<span><small>' + registro.fecha_accionV + '</small></span></br></br>');
             $('#horav').append('<span><small>' + registro.hora_accionV + '</small></span></br></br>');
-            $('#imprimirv').append('<a class="btn btn-primary btn-xs" href="http://localhost:80/diplomado/index.php/version/imprimirtcpdf/?bversion=' + registro.idBitacora_version + '"><span class="glyphicon glyphicon-print" ></span></a></br></br>');
+            $('#imprimirv').append('<a class="btn btn-primary btn-xs" href="http://10.4.25.3:8080/diplomado/index.php/version/imprimirtcpdf/?bversion=' + registro.idBitacora_version + '"><span class="glyphicon glyphicon-print" ></span></a></br></br>');
             num += 1;
 
           });
@@ -3484,7 +3484,7 @@
 
     $("#mnsjReiniciarVersion").html("");
     if (cidirector.length > 0) {
-      $.getJSON('http://localhost:80/diplomado/index.php/usuario/getDirector', function(data) {
+      $.getJSON('http://10.4.25.3:8080/diplomado/index.php/usuario/getDirector', function(data) {
         // data=JSON.parse(data);
         console.log('el id del la bd es' + data[0]['ciU']);
         directorbd = data[0]['ciU'];
@@ -3494,7 +3494,7 @@
           console.log(version);
           $.ajax({
             type: 'post',
-            url: "http://localhost:80/diplomado/index.php/version/reiniciar_sesion_version",
+            url: "http://10.4.25.3:8080/diplomado/index.php/version/reiniciar_sesion_version",
             data: {
               version: version,
               razonV: razon
@@ -3506,7 +3506,7 @@
                 // $("#terminarVersion").modal('hide')
               } else {
                 $("#mnsjReiniciarVersion").html('<p class="alert alert-success"><span class="glyphicon glyphicon-up" ></span><small> Se REINICIO la Versión !!!</small></p>').fadeIn();
-                window.location.href = "http://localhost:80/diplomado/index.php/version/imprimirtcpdf/" + data;
+                window.location.href = "http://10.4.25.3:8080/diplomado/index.php/version/imprimirtcpdf/" + data;
               }
             },
             // complete:function() {
@@ -3532,7 +3532,7 @@
     if (confirm('Esta seguro de ELIMINAR el Documento de Calificaciones?? Una vez que acepte se volvera a Habilitar la Edicion de Calificaciones!!!')) {
       $.ajax({
         type: 'post',
-        url: "http://localhost:80/diplomado/index.php/cargarcalificacionpdf/eliminar_download",
+        url: "http://10.4.25.3:8080/diplomado/index.php/cargarcalificacionpdf/eliminar_download",
         data: {
           pdf: archivo
         },
@@ -3578,7 +3578,7 @@
     // LISTA DE EVENTOS QUE SE HIZO EN ESA VERSION
     $.ajax({
       type: 'POST',
-      url: "http://localhost:80/diplomado/index.php/monografia/getMonografiaporId",
+      url: "http://10.4.25.3:8080/diplomado/index.php/monografia/getMonografiaporId",
       data: {
         monografia: idmono
       },
@@ -3593,7 +3593,7 @@
         } else {
           $('#idcargado').show();
           $('#formMonografiapdf').hide();
-          $('#descargarmono').attr("href", "http://localhost:80/diplomado/index.php/monografia/downloadmonografiapdf/" + rutamono);
+          $('#descargarmono').attr("href", "http://10.4.25.3:8080/diplomado/index.php/monografia/downloadmonografiapdf/" + rutamono);
           $('#rutamono').text(data[0]['rutaMonografia']);
         }
       }
@@ -3610,7 +3610,7 @@
     formdata.append("monografia", monografia);
     console.log(formdata);
     $.ajax({
-      url: "http://localhost:80/diplomado/index.php/monografia/subirMonografiapdf",
+      url: "http://10.4.25.3:8080/diplomado/index.php/monografia/subirMonografiapdf",
       type: "POST",
       data: formdata,
       fileElementId: 'filemonografia',
@@ -3651,7 +3651,7 @@
       var archivo = $('#pdfmonografia').val();
       $.ajax({
         type: 'post',
-        url: "http://localhost:80/diplomado/index.php/monografia/eliminar_monografiapdf",
+        url: "http://10.4.25.3:8080/diplomado/index.php/monografia/eliminar_monografiapdf",
         data: {
           pdf: archivo
         },
@@ -3699,7 +3699,7 @@
     $('#comparacionpdfmono').modal('toggle')
     $.ajax({
       type: 'POST',
-      url: "http://localhost:80/diplomado/index.php/monografia/comparar_monografiapdf",
+      url: "http://10.4.25.3:8080/diplomado/index.php/monografia/comparar_monografiapdf",
       data: {
         monografia: idmono
       },
@@ -3742,7 +3742,7 @@
   // ----------------GRAFICAS--------------
   $(document).ready(function() {
     // console.log('ssssss');data=JSON.parse(data);
-    $.getJSON('http://localhost:80/diplomado/index.php/calificacion/getProbabilidad_calificaciones', function(data) {
+    $.getJSON('http://10.4.25.3:8080/diplomado/index.php/calificacion/getProbabilidad_calificaciones', function(data) {
       // data=JSON.parse(data);  
       console.log(data);
       modulo = data['modulo'];
@@ -3811,7 +3811,7 @@
 
     });
     // ESTA GRAFICA E SPARA LAS LINEAS.. PROBAR SI DA BIEN
-    $.getJSON('http://localhost:80/diplomado/index.php/monografia/grafic_fecha_defensas', function(data) {
+    $.getJSON('http://10.4.25.3:8080/diplomado/index.php/monografia/grafic_fecha_defensas', function(data) {
       // data=JSON.parse(data);  
       console.log(data);
       def1 = data[0];
@@ -3917,7 +3917,7 @@
 
         $.ajax({
           type: 'post',
-          url: "http://localhost:8080/diplomado/index.php/descuento/crearDescuento",
+          url: "http://10.4.25.3:808080/diplomado/index.php/descuento/crearDescuento",
           data: {
             txtNombreD: nombreD,
             txtDescripcionD: descripcionD,

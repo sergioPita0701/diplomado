@@ -104,7 +104,7 @@
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                 <h4 class="modal-title" id="titulolabel"><small>Seleccionar a <strong><?= $academico[0]['nombreA']; ?></strong> para asignarle un Rol</small></h4>
             </div>
-            <form action="http://10.4.25.3:8080/diplomado/index.php/academicoseleccionado/registrarAcadSeleccionado" method="POST" role="form">
+            <form action="http://localhost:80/diplomado/index.php/academicoseleccionado/registrarAcadSeleccionado" method="POST" role="form">
                 <div class="modal-body">
                     <div class="row">
                         <div class="form-group input-sm">

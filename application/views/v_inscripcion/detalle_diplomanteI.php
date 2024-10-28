@@ -211,7 +211,7 @@
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-body">
-                <form class="form" role="form" action="http://10.4.25.3:8080/diplomado/index.php/inscripcion/eliminarInscripcion" method="post">
+                <form class="form" role="form" action="http://localhost:80/diplomado/index.php/inscripcion/eliminarInscripcion" method="post">
                     <div id=" row mensajeEliminar">
                         <small>
                             <p class="alert alert-warning"><span class="glyphicon glyphicon-alert"></span><?= " Dese Eliminar Inscripcion numero: " . $diplomanteinscrito[0]->numeroI . " del Alumno con CI: " . $diplomante[0]['ciD']; ?>
@@ -310,7 +310,7 @@
 <div class="modal fade" id="modalDatosInscripcion" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
-            <!-- <form class="form" role="form" action="http://10.4.25.3:8080/diplomado/index.php/diplomante/editarDiplomante" method="post"> -->
+            <!-- <form class="form" role="form" action="http://localhost:80/diplomado/index.php/diplomante/editarDiplomante" method="post"> -->
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                 <h5 class="modal-title text text-primary" id="">Editar Datos de Inscripcion del Alumno</h5>

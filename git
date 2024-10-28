@@ -1,139 +1,144 @@
 [33mcommit d452222ef837dc8160605de9b801f43abf4005a4[m
 Author: Elizabeth Aduviri Zeballos <eliadu90@gmail.com>
-Date:   Mon Jul 23 18:22:19 2018 -0400
+    Date: Mon Jul 23 18:22:19 2018 -0400
 
     commit despues de modificar base_url
 
-[1mdiff --git a/CodeIgniter/.gitignore b/.gitignore[m
-[1msimilarity index 100%[m
-[1mrename from CodeIgniter/.gitignore[m
-[1mrename to .gitignore[m
-[1mdiff --git a/CodeIgniter/.htaccess b/.htaccess[m
-[1msimilarity index 100%[m
-[1mrename from CodeIgniter/.htaccess[m
-[1mrename to .htaccess[m
-[1mdiff --git a/CodeIgniter/application/.htaccess b/application/.htaccess[m
-[1msimilarity index 100%[m
-[1mrename from CodeIgniter/application/.htaccess[m
-[1mrename to application/.htaccess[m
-[1mdiff --git a/CodeIgniter/application/cache/.htaccess b/application/cache/.htaccess[m
-[1msimilarity index 100%[m
-[1mrename from CodeIgniter/application/cache/.htaccess[m
-[1mrename to application/cache/.htaccess[m
-[1mdiff --git a/CodeIgniter/application/cache/index.html b/application/cache/index.html[m
-[1msimilarity index 100%[m
-[1mrename from CodeIgniter/application/cache/index.html[m
-[1mrename to application/cache/index.html[m
-[1mdiff --git a/CodeIgniter/application/config/autoload.php b/application/config/autoload.php[m
-[1msimilarity index 100%[m
-[1mrename from CodeIgniter/application/config/autoload.php[m
-[1mrename to application/config/autoload.php[m
-[1mdiff --git a/CodeIgniter/application/config/config.php b/application/config/config.php[m
-[1msimilarity index 99%[m
-[1mrename from CodeIgniter/application/config/config.php[m
-[1mrename to application/config/config.php[m
-[1mindex 938c114..8ed7f9d 100644[m
-[1m--- a/CodeIgniter/application/config/config.php[m
-[1m+++ b/application/config/config.php[m
-[36m@@ -23,7 +23,7 @@[m [mdefined('BASEPATH') OR exit('No direct script access allowed');[m
- | a PHP script and you can easily do that on your own.[m
- |[m
- */[m
-[31m-$config['base_url'] = 'http://10.4.25.3:8080/diplomado/CodeIgniter';[m
-[32m+[m[32m$config['base_url'] = 'http://10.4.25.3:8080/diplomado/';[m
- [m
- /*[m
- |--------------------------------------------------------------------------[m
-[1mdiff --git a/CodeIgniter/application/config/constants.php b/application/config/constants.php[m
-[1msimilarity index 100%[m
-[1mrename from CodeIgniter/application/config/constants.php[m
-[1mrename to application/config/constants.php[m
-[1mdiff --git a/CodeIgniter/application/config/database.php b/application/config/database.php[m
-[1msimilarity index 100%[m
-[1mrename from CodeIgniter/application/config/database.php[m
-[1mrename to application/config/database.php[m
-[1mdiff --git a/CodeIgniter/application/config/doctypes.php b/application/config/doctypes.php[m
-[1msimilarity index 100%[m
-[1mrename from CodeIgniter/application/config/doctypes.php[m
-[1mrename to application/config/doctypes.php[m
-[1mdiff --git a/CodeIgniter/application/config/foreign_chars.php b/application/config/foreign_chars.php[m
-[1msimilarity index 100%[m
-[1mrename from CodeIgniter/application/config/foreign_chars.php[m
-[1mrename to application/config/foreign_chars.php[m
-[1mdiff --git a/CodeIgniter/application/config/hooks.php b/application/config/hooks.php[m
-[1msimilarity index 100%[m
-[1mrename from CodeIgniter/application/config/hooks.php[m
-[1mrename to application/config/hooks.php[m
-[1mdiff --git a/CodeIgniter/application/config/index.html b/application/config/index.html[m
-[1msimilarity index 100%[m
-[1mrename from CodeIgniter/application/config/index.html[m
-[1mrename to application/config/index.html[m
-[1mdiff --git a/CodeIgniter/application/config/memcached.php b/application/config/memcached.php[m
-[1msimilarity index 100%[m
-[1mrename from CodeIgniter/application/config/memcached.php[m
-[1mrename to application/config/memcached.php[m
-[1mdiff --git a/CodeIgniter/application/config/migration.php b/application/config/migration.php[m
-[1msimilarity index 100%[m
-[1mrename from CodeIgniter/application/config/migration.php[m
-[1mrename to application/config/migration.php[m
-[1mdiff --git a/CodeIgniter/application/config/mimes.php b/application/config/mimes.php[m
-[1msimilarity index 100%[m
-[1mrename from CodeIgniter/application/config/mimes.php[m
-[1mrename to application/config/mimes.php[m
-[1mdiff --git a/CodeIgniter/application/config/profiler.php b/application/config/profiler.php[m
-[1msimilarity index 100%[m
-[1mrename from CodeIgniter/application/config/profiler.php[m
-[1mrename to application/config/profiler.php[m
-[1mdiff --git a/CodeIgniter/application/config/routes.php b/application/config/routes.php[m
-[1msimilarity index 100%[m
-[1mrename from CodeIgniter/application/config/routes.php[m
-[1mrename to application/config/routes.php[m
-[1mdiff --git a/CodeIgniter/application/config/smileys.php b/application/config/smileys.php[m
-[1msimilarity index 100%[m
-[1mrename from CodeIgniter/application/config/smileys.php[m
-[1mrename to application/config/smileys.php[m
-[1mdiff --git a/CodeIgniter/application/config/user_agents.php b/application/config/user_agents.php[m
-[1msimilarity index 100%[m
-[1mrename from CodeIgniter/application/config/user_agents.php[m
-[1mrename to application/config/user_agents.php[m
-[1mdiff --git a/CodeIgniter/application/controllers/academico.php b/application/controllers/academico.php[m
-[1msimilarity index 100%[m
-[1mrename from CodeIgniter/application/controllers/academico.php[m
-[1mrename to application/controllers/academico.php[m
-[1mdiff --git a/CodeIgniter/application/controllers/academicoespecialidad.php b/application/controllers/academicoespecialidad.php[m
-[1msimilarity index 100%[m
-[1mrename from CodeIgniter/application/controllers/academicoespecialidad.php[m
-[1mrename to application/controllers/academicoespecialidad.php[m
-[1mdiff --git a/CodeIgniter/application/controllers/academicoprofesion.php b/application/controllers/academicoprofesion.php[m
-[1msimilarity index 100%[m
-[1mrename from CodeIgniter/application/controllers/academicoprofesion.php[m
-[1mrename to application/controllers/academicoprofesion.php[m
-[1mdiff --git a/CodeIgniter/application/controllers/academicoseleccionado.php b/application/controllers/academicoseleccionado.php[m
-[1msimilarity index 100%[m
-[1mrename from CodeIgniter/application/controllers/academicoseleccionado.php[m
-[1mrename to application/controllers/academicoseleccionado.php[m
-[1mdiff --git a/CodeIgniter/application/controllers/archivo.php b/application/controllers/archivo.php[m
-[1msimilarity index 100%[m
-[1mrename from CodeIgniter/application/controllers/archivo.php[m
-[1mrename to application/controllers/archivo.php[m
-[1mdiff --git a/CodeIgniter/application/controllers/autenticacion.php b/application/controllers/autenticacion.php[m
-[1msimilarity index 100%[m
-[1mrename from CodeIgniter/application/controllers/autenticacion.php[m
-[1mrename to application/controllers/autenticacion.php[m
-[1mdiff --git a/CodeIgniter/application/controllers/backup.php b/application/controllers/backup.php[m
-[1msimilarity index 100%[m
-[1mrename from CodeIgniter/application/controllers/backup.php[m
-[1mrename to application/controllers/backup.php[m
-[1mdiff --git a/CodeIgniter/application/controllers/bitacora.php b/application/controllers/bitacora.php[m
-[1msimilarity index 100%[m
-[1mrename from CodeIgniter/application/controllers/bitacora.php[m
-[1mrename to application/controllers/bitacora.php[m
-[1mdiff --git a/CodeIgniter/application/controllers/calificacion.php b/application/controllers/calificacion.php[m
-[1msimilarity index 100%[m
-[1mrename from CodeIgniter/application/controllers/calificacion.php[m
-[1mrename to application/controllers/calificacion.php[m
-[1mdiff --git a/CodeIgniter/application/controllers/cargarcalificacionpdf.php b/application/controllers/cargarcalificacionpdf.php[m
-[1msimilarity index 100%[m
-[1mrename from CodeIgniter/application/controllers/cargarcalificacionpdf.php[m
-[1mrename to application/controllers/cargarcalificacionpdf.php[m
-[1mdiff --git a/CodeIgniter/application/controllers/cupload.php b/application/controllers/cupload.php[m
+    [1mdiff --git a/CodeIgniter/.gitignore b/.gitignore[m
+    [1msimilarity index 100%[m
+    [1mrename from CodeIgniter/.gitignore[m
+    [1mrename to .gitignore[m
+    [1mdiff --git a/CodeIgniter/.htaccess b/.htaccess[m
+    [1msimilarity index 100%[m
+    [1mrename from CodeIgniter/.htaccess[m
+    [1mrename to .htaccess[m
+    [1mdiff --git a/CodeIgniter/application/.htaccess b/application/.htaccess[m
+    [1msimilarity index 100%[m
+    [1mrename from CodeIgniter/application/.htaccess[m
+    [1mrename to application/.htaccess[m
+    [1mdiff --git a/CodeIgniter/application/cache/.htaccess b/application/cache/.htaccess[m
+    [1msimilarity index 100%[m
+    [1mrename from CodeIgniter/application/cache/.htaccess[m
+    [1mrename to application/cache/.htaccess[m
+    [1mdiff --git a/CodeIgniter/application/cache/index.html b/application/cache/index.html[m
+    [1msimilarity index 100%[m
+    [1mrename from CodeIgniter/application/cache/index.html[m
+    [1mrename to application/cache/index.html[m
+    [1mdiff --git a/CodeIgniter/application/config/autoload.php b/application/config/autoload.php[m
+    [1msimilarity index 100%[m
+    [1mrename from CodeIgniter/application/config/autoload.php[m
+    [1mrename to application/config/autoload.php[m
+    [1mdiff --git a/CodeIgniter/application/config/config.php b/application/config/config.php[m
+    [1msimilarity index 99%[m
+    [1mrename from CodeIgniter/application/config/config.php[m
+    [1mrename to application/config/config.php[m
+    [1mindex 938c114..8ed7f9d 100644[m
+    [1m--- a/CodeIgniter/application/config/config.php[m
+    [1m+++ b/application/config/config.php[m
+    [36m@@ -23,7 +23,7 @@[m [mdefined('BASEPATH') OR exit('No direct script access allowed');[m
+    | a PHP script and you can easily do that on your own.[m
+    |[m
+    */[m
+    [31m-$config['base_url'] = 'http://localhost:80/diplomado/CodeIgniter';[m
+    [32m+[m[32m$config['base_url'] = 'http://localhost:80/diplomado/';[m
+    [m
+    /*[m
+    |--------------------------------------------------------------------------[m
+    [1mdiff --git a/CodeIgniter/application/config/constants.php b/application/config/constants.php[m
+    [1msimilarity index 100%[m
+    [1mrename from CodeIgniter/application/config/constants.php[m
+    [1mrename to application/config/constants.php[m
+    [1mdiff --git a/CodeIgniter/application/config/database.php b/application/config/database.php[m
+    [1msimilarity index 100%[m
+    [1mrename from CodeIgniter/application/config/database.php[m
+    [1mrename to application/config/database.php[m
+    [1mdiff --git a/CodeIgniter/application/config/doctypes.php b/application/config/doctypes.php[m
+    [1msimilarity index 100%[m
+    [1mrename from CodeIgniter/application/config/doctypes.php[m
+    [1mrename to application/config/doctypes.php[m
+    [1mdiff --git a/CodeIgniter/application/config/foreign_chars.php b/application/config/foreign_chars.php[m
+    [1msimilarity index 100%[m
+    [1mrename from CodeIgniter/application/config/foreign_chars.php[m
+    [1mrename to application/config/foreign_chars.php[m
+    [1mdiff --git a/CodeIgniter/application/config/hooks.php b/application/config/hooks.php[m
+    [1msimilarity index 100%[m
+    [1mrename from CodeIgniter/application/config/hooks.php[m
+    [1mrename to application/config/hooks.php[m
+    [1mdiff --git a/CodeIgniter/application/config/index.html b/application/config/index.html[m
+    [1msimilarity index 100%[m
+    [1mrename from CodeIgniter/application/config/index.html[m
+    [1mrename to application/config/index.html[m
+    [1mdiff --git a/CodeIgniter/application/config/memcached.php b/application/config/memcached.php[m
+    [1msimilarity index 100%[m
+    [1mrename from CodeIgniter/application/config/memcached.php[m
+    [1mrename to application/config/memcached.php[m
+    [1mdiff --git a/CodeIgniter/application/config/migration.php b/application/config/migration.php[m
+    [1msimilarity index 100%[m
+    [1mrename from CodeIgniter/application/config/migration.php[m
+    [1mrename to application/config/migration.php[m
+    [1mdiff --git a/CodeIgniter/application/config/mimes.php b/application/config/mimes.php[m
+    [1msimilarity index 100%[m
+    [1mrename from CodeIgniter/application/config/mimes.php[m
+    [1mrename to application/config/mimes.php[m
+    [1mdiff --git a/CodeIgniter/application/config/profiler.php b/application/config/profiler.php[m
+    [1msimilarity index 100%[m
+    [1mrename from CodeIgniter/application/config/profiler.php[m
+    [1mrename to application/config/profiler.php[m
+    [1mdiff --git a/CodeIgniter/application/config/routes.php b/application/config/routes.php[m
+    [1msimilarity index 100%[m
+    [1mrename from CodeIgniter/application/config/routes.php[m
+    [1mrename to application/config/routes.php[m
+    [1mdiff --git a/CodeIgniter/application/config/smileys.php b/application/config/smileys.php[m
+    [1msimilarity index 100%[m
+    [1mrename from CodeIgniter/application/config/smileys.php[m
+    [1mrename to application/config/smileys.php[m
+    [1mdiff --git a/CodeIgniter/application/config/user_agents.php b/application/config/user_agents.php[m
+    [1msimilarity index 100%[m
+    [1mrename from CodeIgniter/application/config/user_agents.php[m
+    [1mrename to application/config/user_agents.php[m
+    [1mdiff --git a/CodeIgniter/application/controllers/academico.php b/application/controllers/academico.php[m
+    [1msimilarity index 100%[m
+    [1mrename from CodeIgniter/application/controllers/academico.php[m
+    [1mrename to application/controllers/academico.php[m
+    [1mdiff --git a/CodeIgniter/application/controllers/academicoespecialidad.php
+    b/application/controllers/academicoespecialidad.php[m
+    [1msimilarity index 100%[m
+    [1mrename from CodeIgniter/application/controllers/academicoespecialidad.php[m
+    [1mrename to application/controllers/academicoespecialidad.php[m
+    [1mdiff --git a/CodeIgniter/application/controllers/academicoprofesion.php
+    b/application/controllers/academicoprofesion.php[m
+    [1msimilarity index 100%[m
+    [1mrename from CodeIgniter/application/controllers/academicoprofesion.php[m
+    [1mrename to application/controllers/academicoprofesion.php[m
+    [1mdiff --git a/CodeIgniter/application/controllers/academicoseleccionado.php
+    b/application/controllers/academicoseleccionado.php[m
+    [1msimilarity index 100%[m
+    [1mrename from CodeIgniter/application/controllers/academicoseleccionado.php[m
+    [1mrename to application/controllers/academicoseleccionado.php[m
+    [1mdiff --git a/CodeIgniter/application/controllers/archivo.php b/application/controllers/archivo.php[m
+    [1msimilarity index 100%[m
+    [1mrename from CodeIgniter/application/controllers/archivo.php[m
+    [1mrename to application/controllers/archivo.php[m
+    [1mdiff --git a/CodeIgniter/application/controllers/autenticacion.php
+    b/application/controllers/autenticacion.php[m
+    [1msimilarity index 100%[m
+    [1mrename from CodeIgniter/application/controllers/autenticacion.php[m
+    [1mrename to application/controllers/autenticacion.php[m
+    [1mdiff --git a/CodeIgniter/application/controllers/backup.php b/application/controllers/backup.php[m
+    [1msimilarity index 100%[m
+    [1mrename from CodeIgniter/application/controllers/backup.php[m
+    [1mrename to application/controllers/backup.php[m
+    [1mdiff --git a/CodeIgniter/application/controllers/bitacora.php b/application/controllers/bitacora.php[m
+    [1msimilarity index 100%[m
+    [1mrename from CodeIgniter/application/controllers/bitacora.php[m
+    [1mrename to application/controllers/bitacora.php[m
+    [1mdiff --git a/CodeIgniter/application/controllers/calificacion.php b/application/controllers/calificacion.php[m
+    [1msimilarity index 100%[m
+    [1mrename from CodeIgniter/application/controllers/calificacion.php[m
+    [1mrename to application/controllers/calificacion.php[m
+    [1mdiff --git a/CodeIgniter/application/controllers/cargarcalificacionpdf.php
+    b/application/controllers/cargarcalificacionpdf.php[m
+    [1msimilarity index 100%[m
+    [1mrename from CodeIgniter/application/controllers/cargarcalificacionpdf.php[m
+    [1mrename to application/controllers/cargarcalificacionpdf.php[m
+    [1mdiff --git a/CodeIgniter/application/controllers/cupload.php b/application/controllers/cupload.php[m

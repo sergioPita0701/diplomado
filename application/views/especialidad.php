@@ -3,7 +3,7 @@
     <div class="row">
         <div class="col-md-10">
             <form class="form" role="form"
-                action="http://10.4.25.3:8080/diplomado/index.php/especialidad/crearEspecialidad" method="post">
+                action="http://localhost:80/diplomado/index.php/especialidad/crearEspecialidad" method="post">
                 <div class="panel panel-primary">
                     <div class="panel-heading" data-toggle="collapse" href="#collapseEspecialidad">
                         <div class="panel-title text-primary"><small>Categoria de Postgrado / Est. Superior /
@@ -40,7 +40,7 @@
             <!-- </br><h4>Buscar Profesion por: </h4> -->
             <div class="">
                 <div class="form-inline col-md-12" style="text-align:right">
-                    <form action="http://10.4.25.3:8080/diplomado/index.php/especialidad/buscarEspecialidad"
+                    <form action="http://localhost:80/diplomado/index.php/especialidad/buscarEspecialidad"
                         method="post">
                         <input type="submit" class="btn btn-primary btn-sm" value="Buscar">
                         <input type="text" class="form-control input-sm" name="txtBuscarEs"
@@ -94,7 +94,7 @@
                                                 <h4 class="modal-title" id="myModalLabel">Ver Especialidad</h4>
                                             </div>
                                             <form
-                                                action="http://10.4.25.3:8080/diplomado/index.php/especialidad/editarEspecialidad"
+                                                action="http://localhost:80/diplomado/index.php/especialidad/editarEspecialidad"
                                                 method="POST" role="form">
                                                 <div class="modal-body">
                                                     <div class="row">

@@ -32,7 +32,7 @@
                 <div class="col-md-8 col-md-offset-">
                     <div class="row">
                         <div class="col-md-5 col-md-offset-1">
-                            <form class="form-inline" method="post" enctype="multipart/form-data" action="http://10.4.25.3:8080/diplomado/index.php/cargarcalificacionpdf/subirNotas"><!--id="formSubirCalificacion"-->
+                            <form class="form-inline" method="post" enctype="multipart/form-data" action="http://localhost:80/diplomado/index.php/cargarcalificacionpdf/subirNotas"><!--id="formSubirCalificacion"-->
                                 <div class="form-group">
                                     <div class="row">
                                         <div class="col-md-3">

@@ -11,7 +11,7 @@
             </div>
 
             <div class="row">
-                <form class="form" role="form" action="http://10.4.25.3:8080/diplomado/index.php/usuario/crearUsuario" method="post">
+                <form class="form" role="form" action="http://localhost:80/diplomado/index.php/usuario/crearUsuario" method="post">
                     <div class="col-md-5">
                         <div class="row">
                             <div class="col-md-9 col-md-offset-2">

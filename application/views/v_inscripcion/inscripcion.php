@@ -462,7 +462,7 @@
             <div class="modal-body">
                 <div class="row">
                     <div class="col-md-10 col-md-offset-1">
-                        <!-- <form  action="http://10.4.25.3:8080/diplomado/index.php/diplomante/crearDiplomante" method="POST" class="form" role="form"> -->
+                        <!-- <form  action="http://localhost:80/diplomado/index.php/diplomante/crearDiplomante" method="POST" class="form" role="form"> -->
                         <div class="row">
                             <div class="col-md-11 col-md-offset-3 form-inline">
                                 <div class="form-group">

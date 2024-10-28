@@ -9,7 +9,7 @@
                 <h4 class="page-header text-primary">
                     <center>Registrar Academico</center>
                 </h4>
-                <form class="form" role="form" action="http://10.4.25.3:8080/diplomado/index.php/academico/crearAcademico" method="post">
+                <form class="form" role="form" action="http://localhost:80/diplomado/index.php/academico/crearAcademico" method="post">
                     <div class="col-md-12 ">
                         <div class="row">
                             <div class="col-md-7 ">

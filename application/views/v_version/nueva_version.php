@@ -16,7 +16,7 @@
             </div></br>
             <div class="row">
                 <div class="col-md-10 col-md-offset-1">
-                    <form class="form" role="form" action="http://10.4.25.3:8080/diplomado/index.php/version/registrarVersion" method="post">
+                    <form class="form" role="form" action="http://localhost:80/diplomado/index.php/version/registrarVersion" method="post">
                         <div class="panel panel-info">
                             <!-- <div class="panel-heading">
                                 <div class="panel-title">Registrar Nueva Version</div>

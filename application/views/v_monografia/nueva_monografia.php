@@ -20,7 +20,7 @@
 
                                 <div class="row">
                                     <div class="col-md-12 col-md-offset-">
-                                        <form class="form-horizontal" action="" id="formMonografia" method="post"><!-- http://10.4.25.3:8080/diplomado/index.php/monografia/crearMonografia_de_Diplomante -->
+                                        <form class="form-horizontal" action="" id="formMonografia" method="post"><!-- http://localhost:80/diplomado/index.php/monografia/crearMonografia_de_Diplomante -->
                                             <div class="row">
                                                 <div class="col-md-8 col-md-offset-3" id="msjDiploamteMo">
                                                 </div>
@@ -108,7 +108,7 @@
                         <!-- <div class="panel-body"> -->
                         <div class="row">
                             <div class="col-md-11 col-md-offset-1">
-                                <form action="http://10.4.25.3:8080/diplomado/index.php/monografia/registroMonografia" method="post">
+                                <form action="http://localhost:80/diplomado/index.php/monografia/registroMonografia" method="post">
                                     <div class="">
                                         </br></br><input class="btn btn-default btn-sm active" type="submit" value="Seleccionar Participante">
                                     </div></br>

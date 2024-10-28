@@ -8,7 +8,7 @@
                 </div>
                 <div class="row">
                     <div class="col-md-5 col-md-offset-6">
-                        <form action="http://10.4.25.3:8080/diplomado/index.php/tutoria/lista_tutoria" method="post">
+                        <form action="http://localhost:80/diplomado/index.php/tutoria/lista_tutoria" method="post">
                             <div class="">
                                 <div class="input-group">
                                     <input type="text" id="" name="txtBuscarTutor" class="form-control" placeholder="Buscar Tutor por CI de Tutor.." value="<?= set_value('txtBuscarTutor'); ?>">

@@ -1,7 +1,7 @@
 <!-- <div class="col-sm-9 col-sm-offset-3 col-md-9 col-md-offset-3 ">
     <div class="row">
     <div class="col-md-10">
-        <form class="form" role="form" action="http://10.4.25.3:8080/diplomado/index.php/profesion/crearProfesion" method="post">
+        <form class="form" role="form" action="http://localhost:80/diplomado/index.php/profesion/crearProfesion" method="post">
             <div class="panel panel-info">
                 <div class="panel-heading">
                     <div class="panel-title">Registrar Profesion</div>
@@ -65,7 +65,7 @@
 
                 </div>
                 <div class="form-inline col-md-8" style="text-align:right">
-                    <form action="http://10.4.25.3:8080/diplomado/index.php/profesion/buscarProfesion" method="post">
+                    <form action="http://localhost:80/diplomado/index.php/profesion/buscarProfesion" method="post">
                         <select class="form-control input-sm" id="selectProf" name="selectProfesion">
                             <option value="">---Seleccionar---</option>
                             <option value="">Todos</option>
@@ -110,7 +110,7 @@
                                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                                                     <h4 class="modal-title text-primary" id="myModalLabel">Ver Profesion</h4>
                                                 </div>
-                                                <form action="http://10.4.25.3:8080/diplomado/index.php/profesion/editarProfesion" method="POST" role="form">
+                                                <form action="http://localhost:80/diplomado/index.php/profesion/editarProfesion" method="POST" role="form">
                                                     <div class="modal-body">
                                                         <div class="row">
                                                             <div class="col-md-10">

@@ -7,7 +7,7 @@
                 </h1><br>
                 <div class="row">
                     <div class="col-md-9 col-md-offset-2">
-                        <form action="http://localhost:80/diplomado/index.php/modulo/crearModulo" method="POST" class="from-horizontal" role="form">
+                        <form action="http://10.4.25.3:8080/diplomado/index.php/modulo/crearModulo" method="POST" class="from-horizontal" role="form">
                             <div class="row">
                                 <div class="panel-body ">
                                     <div class="row">
@@ -178,7 +178,7 @@
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                 <h4 class="modal-title" id="myModalLabel">Edicion -<small> Modulo Numero <span id="numsele" name=""></span></small></h4>
             </div>
-            <form action="http://localhost:80/diplomado/index.php/modulo/editaMod" method="POST" role="form">
+            <form action="http://10.4.25.3:8080/diplomado/index.php/modulo/editaMod" method="POST" role="form">
                 <div class="modal-body list-group">
                     <!-- <div class="row">
                         <div class="col-md-5 col-md-offset-4">

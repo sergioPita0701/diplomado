@@ -85,7 +85,10 @@ class Csv extends CI_Controller {
                    
                     $data = array_combine($headers, $row);
                 
-                    
+                      // Decodificar datos a UTF-8 para evitar problemas con tildes y "ñ"
+                    foreach ($data as $key => $value) {
+                        $data[$key] = utf8_encode($value);
+                    }
                     $diplomante = $this->diplomante_model->getDiplomanteByCiDLike($data['ciD']);
                     if (!$diplomante || $diplomante == null) {
                         $diplomante_data = array(
@@ -183,7 +186,7 @@ class Csv extends CI_Controller {
                 if ($this->db->trans_status() === FALSE) {
                     throw new Exception("Error al realizar la transacción");
                 }
-
+               
                 $this->db->trans_commit();  // Confirmar la transacción
 
                 fclose($csv_file);
@@ -258,7 +261,7 @@ class Csv extends CI_Controller {
     public function procesar_exportacion () {
         // Obtener la versión seleccionada
         $version_id = $this->input->post('version');
-
+     
         
         // Datos de ejemplo (esto se puede reemplazar con los datos obtenidos de la base de datos)
         $transacciones = $this->transaccion_model->getTransaccionesSearchByIdVersion($version_id);
@@ -271,8 +274,10 @@ class Csv extends CI_Controller {
         }
         $filename = 'export_' . date('Ymd') . '.csv';
       
-        header('Conptent-Type: application/csv');
+        header('Content-Type: text/csv; charset=UTF-8');
         header('Content-Disposition: attachment; filename=' . $filename);
+        echo "\xEF\xBB\xBF";  // Agregar BOM UTF-8 para que Excel detecte la codificación
+    
 
         // Crear el archivo CSV en memoria
         $output = fopen('php://output', 'w');
@@ -286,10 +291,10 @@ class Csv extends CI_Controller {
         // Escribir los datos
         foreach ($transacciones as $row) {
             $descuento = '';
-            if ($row['nombreD'] == "Ninguno" ) {
+            if ($row['porcentajeD'] == 0 ) {
                 $descuento = '';
             } else {
-                $descuento= $row['nombreD'] . '%';
+                $descuento= $row['porcentajeD'] . '%';
             }
             $sumaPagosString = '"' . number_format($row['sumaPagos'], 2, '.', ',') . '"';
             $filteredRow = array(
@@ -298,7 +303,7 @@ class Csv extends CI_Controller {
                 $row['apellidoPaternoD'],
                 $row['apellidoMaternoD'],  
                 $sumaPagosString,
-                intval($row['montoDescuentoT']),
+                intval($row['montoOriginalT']),
                 $descuento,
                 '',
             );

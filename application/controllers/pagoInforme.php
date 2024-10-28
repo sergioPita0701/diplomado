@@ -102,7 +102,7 @@ class PagoInforme extends CI_Controller
     private function loadView($data) {
     
         $this->load->view('plantillas/encabezado');
-        $this->load->view('plantillas/navegador');
+        $this->load->view('plantillas/navegador', $data);
         $data['tipo'] = $this->session->userdata('tipo');
         switch ($data['tipo']) {
             case 'Secretario':

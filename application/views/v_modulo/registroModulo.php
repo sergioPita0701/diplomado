@@ -29,7 +29,7 @@
                                             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                                             <h4 class="modal-title" id="myModalLabel">Ver Detalles</h4>
                                         </div>
-                                        <form action="http://localhost:80/diplomado//index.php/modulo/editaMod" method="POST" role="form">
+                                        <form action="http://10.4.25.3:8080/diplomado//index.php/modulo/editaMod" method="POST" role="form">
                                             <div class="modal-body">
 
                                                 <div class="row">

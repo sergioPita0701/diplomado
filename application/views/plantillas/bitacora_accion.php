@@ -10,7 +10,7 @@
                 </div>
             </div>
             <div class="row">
-                <form action="http://localhost:80/diplomado/index.php/bitacora/getBitacora" method="POST" role="form">
+                <form action="http://10.4.25.3:8080/diplomado/index.php/bitacora/getBitacora" method="POST" role="form">
                     <div class="col-md-4 col-md-offset-8 form-inline">
                         <input class="form-control input-sm" type="date" id="fechabitacoracc" name="fechabitacoracc" size="25" autocomplete="on" value="">
                         <input type="submit" class="btn btn-primary btn-sm" value="Seleccionar">

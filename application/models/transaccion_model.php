@@ -113,8 +113,30 @@ class Transaccion_model extends CI_Model
     public function getTransaccionesSearchByIdVersion($idVersion)
     {
         // Inicializar la consulta base
-        $this->db->select('trans.*, ins.*, dip.*, ver.*, des.*, SUM(pag.montoTotalBsP) as sumaPagos');
-        $this->db->select('trans.idTransaccion, ins.*, dip.ciD,dip.nombreD as nombreDiplomante,dip.apellidoPaternoD,dip.apellidoMaternoD, ver.*, des.*, SUM(pag.montoTotalBsP) as sumaPagos');
+        $this->db->select([
+            'trans.idTransaccion',
+            'trans.idDescuento',
+            'trans.idInscripcion',
+            'trans.montoOriginalT',
+            'ins.idInscripcion',
+            'ins.idVersion',  
+            'ins.idDiplomante',
+            "ins.ciI",
+            'des.idDescuento',
+            'des.porcentajeD',
+            'dip.idDiplomante',
+            'dip.ciD',
+            'dip.nombreD as nombreDiplomante',
+            'dip.apellidoPaternoD',
+            'dip.apellidoMaternoD',
+            'ver.idVersion',
+            'ver.nombreV',
+            'ver.costoV',
+            'pag.idPago',
+            'pag.idTransaccion',
+            'SUM(pag.montoTotalBsP) as sumaPagos'
+        ]);
+    
         $this->db->from('transaccion as trans');
         $this->db->join('inscripcion as ins', 'trans.idInscripcion = ins.idInscripcion');
         $this->db->join('descuento as des', 'trans.idDescuento = des.idDescuento', 'left');

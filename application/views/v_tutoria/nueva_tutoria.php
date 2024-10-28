@@ -13,7 +13,7 @@
                                     </h4>
                                     <!-- <h5><center>Facultad de Pedagogia de la U.M.R.P.S.F.X.CH.</center></h5> -->
                                 </div>
-                                <form class="form-horizontal" id="formasignartutoria" method="post"><!--  http://localhost:80/diplomado/index.php/tutoria/crearTutoriaMonografia -->
+                                <form class="form-horizontal" id="formasignartutoria" method="post"><!--  http://10.4.25.3:8080/diplomado/index.php/tutoria/crearTutoriaMonografia -->
                                     <div class="row">
                                         <div class="col-md-8 col-md-offset-1" id="msjtutordiplo"></div>
                                     </div>

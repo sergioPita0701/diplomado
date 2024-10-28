@@ -14,7 +14,7 @@
                             <span class="glyphicon glyphicon-new-window"></span> Crear Nueva Versión
                         </a>
                     </span>
-                    <!-- <form class="form" role="form" action="http://localhost:80/diplomado/index.php/version/imprimirtcpdf" method="post">
+                    <!-- <form class="form" role="form" action="http://10.4.25.3:8080/diplomado/index.php/version/imprimirtcpdf" method="post">
                         <div class="panel-body">
                             
                         </div>    
@@ -82,7 +82,7 @@
                                         </td>
                                         <td><?= $fila['descripcionV']; ?></td>
                                         <!-- <td>
-                                            <a href="http://localhost:80/diplomado/index.php/version/ingresarv?nombre=<?= $fila['nombreV']; ?>&estado=<?= $fila['estadoV']; ?>" id="ingresarv" class="btn btn-success btn-xs">
+                                            <a href="http://10.4.25.3:8080/diplomado/index.php/version/ingresarv?nombre=<?= $fila['nombreV']; ?>&estado=<?= $fila['estadoV']; ?>" id="ingresarv" class="btn btn-success btn-xs">
                                                 <span class="glyphicon glyphicon-eye-open glyphicon-sm"></span>
                                             </a>
                                             <c id="lista" class="btn btn-info btn-xs <?= ($this->session->userdata('tipo') == 'Administrador') ? "" : "hidden" ?>">
@@ -109,7 +109,7 @@
                                                 <ul class="dropdown-menu dropdown-menu-sm"> <!-- Agregamos la clase dropdown-menu-sm para reducir el tamaño -->
 
                                                     <li>
-                                                        <a href="http://localhost:80/diplomado/index.php/version/ingresarv?nombre=<?= $fila['nombreV']; ?>&estado=<?= $fila['estadoV']; ?>" class="btn btn-success btn-xs" style="color: white;">
+                                                        <a href="http://10.4.25.3:8080/diplomado/index.php/version/ingresarv?nombre=<?= $fila['nombreV']; ?>&estado=<?= $fila['estadoV']; ?>" class="btn btn-success btn-xs" style="color: white;">
                                                             <span class="glyphicon glyphicon-eye-open glyphicon-sm"></span> Ingresar
                                                         </a>
                                                     </li>
@@ -162,7 +162,7 @@
                 </h5>
             </div>
             <div class="modal-body">
-                <!-- <form class="form" role="form" action="http://localhost:80/diplomado/index.php/version/imprimepdfeventoversion" method="post"> -->
+                <!-- <form class="form" role="form" action="http://10.4.25.3:8080/diplomado/index.php/version/imprimepdfeventoversion" method="post"> -->
                 <div class="panel-body">
                     <div class="row">
                         <div id="" class=" col-md-12 ">
@@ -225,7 +225,7 @@
 <div class="modal fade bs-iniciarVersion-modal-sm" id="iniciarVersion" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
     <div class="modal-dialog modal-sm" role="document">
         <div class="modal-content">
-            <!-- <form  action="http://localhost:80/diplomado/index.php/usuario/terminarVersion" method="POST" class="form" role="form"> -->
+            <!-- <form  action="http://10.4.25.3:8080/diplomado/index.php/usuario/terminarVersion" method="POST" class="form" role="form"> -->
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                 <h4 class="modal-title" id="myModalLabel"> <small class="text text-danger text-uppercase">Reinicio de Version </small> </h4>
